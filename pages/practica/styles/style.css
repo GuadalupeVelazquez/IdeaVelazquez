@@ -21,6 +21,7 @@
  .portadaImg{
      display: flex;
      justify-content: center;
+     max-width: 100%;
 
  }
  ul li {
@@ -50,12 +51,38 @@
 .navBar{
     display: flex;
     justify-content: center;
-}
+    flex-wrap: wrap;
+    border-style: double solid solid solid;
+    border-width: 5px;
+    padding: 10px;
+    border-color: burlywood ;
+    border-radius:20px ;
+    margin: 5px;
+  }
+  
+    
+
+
 
 #navbarList{
     display: flex;
     justify-content: space-evenly;
+      
 }
+
+
+.enlaceNav:hover{
+    
+    background-color:rgba(238, 221, 202, 0.863) ;
+    transition: all 0.5s;
+    border-radius: 8px;
+    transform: scale(1.2);
+     
+}
+
+
+
+
 
 .navBar li{
     text-decoration: none;
@@ -253,6 +280,7 @@ h4 {
 }
 
 .containerObras{
+    background-color: rgb(219, 216, 216);
     padding: 50px;
 }
 
@@ -268,7 +296,7 @@ h4 {
 }
 
 .listaExpo{
-    padding: 100px;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #F0FFC2;
