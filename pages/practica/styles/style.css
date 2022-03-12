@@ -283,11 +283,15 @@ h4 {
     background-color: rgb(219, 216, 216);
     padding: 50px;
 }
+.containerObras img:hover{
+    box-shadow: 10px 10px 5px rgba(15, 82, 94, 0.514);
+}
 
 .containerObras img{
     height:400px ;
     width: 350px;
 }
+
 
 .obras{
     display: grid;
