@@ -212,9 +212,15 @@ h5 {
     margin: 0%;
 }
 
+.btn-outline-danger {
+    margin: 0px 0px 0px 12px;
+    
+}
+
+
 
 #footer{
-    background-color: darksalmon;
+    background-color:darksalmon ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
