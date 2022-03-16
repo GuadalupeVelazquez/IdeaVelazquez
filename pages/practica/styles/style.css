@@ -147,7 +147,9 @@
     margin: 0%;
     background-color:#F0FFC2 ;
 }
-
+.comentario{
+    width:100%;
+}
 
 #barraContactos{
     display: grid;
@@ -170,7 +172,7 @@
 
    .mailContacto{
     height: 20px;
-    width: 300px;
+    width: 250px;
     border-color: sienna;
    }
 
@@ -371,11 +373,11 @@ h4 {
     #tituloFooter{
         padding: 30px 0px 30px 35px;
     }
-
+/* adsdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssd */
     .listaExpo{
-        padding: 100px 0px 100px 250px;
+        /* padding: 100px 0px 100px 25px; */
         display: grid;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 2fr; */
     }
 
     #barraContactos{
@@ -401,7 +403,18 @@ h4 {
 
     
 }
-
+@media (max-width:760px){
+    #barraContactos{
+        display: grid;
+    grid-template-columns:  1fr;}
+}
+@media (max-width:650px){
+    .listaExpo{
+        /* padding: 100px 0px 100px 25px; */
+        display: grid;
+         grid-template-columns: 1fr; 
+    }
+}
 @media (max-width: 500px) {
 
     header{
@@ -464,14 +477,14 @@ h4 {
        }
 
        .listaExpo{
-        padding: 100px 100px 0px;
+        padding-left:25px; 
         display: grid;
         grid-template-columns: 1fr;
     }
 
     #barraContactos{
         display: grid;
-        grid-template-columns:  1fr;
+        
         background-color:#F0FFC2 ;
     
        }
