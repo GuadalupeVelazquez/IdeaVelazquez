@@ -4,30 +4,15 @@
     padding: 0;
 }
 
+/* Index */
+
 .david{
     background-color: burlywood;
     width: 75px;
     height: 75px;
 }
 
- h1 {
-     color: rgb(192, 128, 168);
-     font-family: 'Abril Fatface', cursive;
-}
- 
- .portada {
-     background-color: #F0FFC2;
- }
- .portadaImg{
-     display: flex;
-     justify-content: center;
-     max-width: 100%;
 
- }
-
- /* .carousel-item{
-     padding: 50px;
- } */
 
  ul li {
      color: palevioletred;
@@ -36,10 +21,6 @@
     list-style-type: none;
 }
 
- h2{
-     color: sienna;
-     font-family: 'Abril Fatface', cursive;
- }
 
  header{
     background-color: #F0FFC2;
@@ -66,10 +47,7 @@
   }
   
     
-
-
-
-#navbarList{
+.navbarList{
     display: flex;
     justify-content: space-evenly;
       
@@ -82,11 +60,13 @@
     transition: all 0.5s;
     border-radius: 8px;
     transform: scale(1.2);
-     
+    -moz-transition: all 0.5s;
+    -o-transition:  all 0.5s;
+    -webkit-transition:  all 0.5s;
+    -webkit-transform:scale(1.2) ;
+     -moz-transform:scale(1.2) ;
+     -o-transform:scale(1.2) ;
 }
-
-
-
 
 
 .navBar li{
@@ -94,70 +74,46 @@
     margin: 10px;
 }
 
-#tituloMain{
-    margin-top: 0px;
+.navBar a{
+    text-decoration: none;
 }
 
-
-.noticia {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-}
-
-.contenedorNoticias{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-
-.contenedorNoticias div{
-    display: flex;
-    flex-direction: column;
-    background-color: peru;
-    padding: 50px;
-}
-
- #tituloNoticias{
+ .tituloNoticias{
     
     margin: 0px ;
     padding: 30px;
-    background-color:peru ;
+    background-color:rgb(253, 255, 240) ;
 }
 
- .sol {
-     width: 200px;
+ 
+
+ .card-img-top{
+     width: 285px;
+     height: 250px;
  }
 
- .texto {
-     
-     font-size: 17px;
-     font-family: 'Didact Gothic', sans-serif;
+
+ .containerNoticias{
+     margin: 55px 0px 0px 20px;
  }
 
- .noticiaBoton{
-    display: flex;
-    justify-content: left;
-    flex-wrap: nowrap;
-     color: beige;
-     font-size: 15px;
- }
+/* fin index */
 
-.tituloBoletos{
-    margin: 0%;
-    background-color:#F0FFC2 ;
-}
-.comentario{
-    width:100%;
-}
 
-#barraContactos{
+/* contactos */
+
+.barraContactos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color:#F0FFC2 ;
     padding: 10px;
 
    }
+
+   .tituloContacto{
+    padding-left: 20px;
+   }
+
    .tituloContactos{
        background-color: #F0FFC2 ;
        padding: 25px 0px 25px 0px;
@@ -183,7 +139,97 @@
     border-color: sienna;
    }
 
-   .listaUno {
+   
+/* fin de contactos */
+
+
+
+/* eventos */
+
+.tituloEventos{
+    padding: 20px;
+    background-color:#F0FFC2  ;
+    margin: 0%;
+}
+
+.parrafoEventos{
+    background-color:#F0FFC2; 
+    padding: 30px;
+
+}
+
+.listaExpo{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F0FFC2;
+}
+
+.btn-outline-danger {
+    margin: 0px 0px 0px 12px;
+    
+}
+
+.info{
+    
+    border-width: 2px;
+    border-style: solid;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+/* fin de eventos */
+
+
+
+/* footer */
+
+.tituloFooter{
+    margin: 0%;
+    
+    padding: 30px 0px 30px 15px;
+}
+
+
+.footerLogo{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.footerImg i{ 
+    width: 30px;
+    height:30px;
+}
+
+.listaRedes{
+    display: flex;
+    
+}
+.listaRedes  li{
+    margin: 10px;
+
+}
+
+/* fin de footer */
+
+
+
+/* Boletos */
+
+.tituloBoletos{
+    margin: 0%;
+    background-color:#F0FFC2 ;
+}
+
+.listaBoletos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:  #F0FFC2;
+    padding: 30px;
+}
+
+.listaUno {
     border-style: solid;
     border-width: 2px;
     width: 500px;
@@ -200,38 +246,107 @@
     margin: 10px;
    }
 
+/* fin de Boletos */
 
 
-h5 {
-    color: sienna;
-     font-family: 'Abril Fatface', cursive;
-     padding: 30px 0px 30px 0px
+
+
+/* obras */
+
+.obras{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.tituloEventos{
-    padding: 20px;
-    background-color:#F0FFC2  ;
-    margin: 0%;
+.parrafoObras{
+    background-color:#F0FFC2; 
+    padding: 30px;
 }
 
-.btn-outline-danger {
-    margin: 0px 0px 0px 12px;
+.containerObras{
+    background-color: rgb(219, 216, 216);
+    padding: 30px 15px;
+}
+
+
+.containerObras img{
+    height:400px ;
+    width: 350px;
+}
+
+.containerObras{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(219, 216, 216);
+}
+
+.containerObras figure{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 100px;
     
 }
 
-
-
-#footer{
-    background-color:darksalmon ;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.containerObras figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    
 }
 
-#tituloFooter{
-    margin: 0%;
-    background-color:darksalmon ;
-    padding: 30px 0px 30px 15px;
+.containerObras figure .txt{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(156, 157, 218, 0.452);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+    
+}
+
+.containerObras figure:hover{
+    box-shadow: 20px 15px 25px
+    #323b5583;
+    
+    
+}
+
+.containerObras figure:hover > .txt{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.containerObras figure .txt p{
+    margin: 150px;
+    transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out ;
+    -o-transition: all 500ms ease-out; 
+    -webkit-transition: all 500ms ease-out; 
+}
+
+
+/* fin de obras */
+
+/* Titulos */
+
+h1 {
+    color: rgb(192, 128, 168);
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2{
+    color: sienna;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h3 {
@@ -243,96 +358,21 @@ h4 {
      font-family: 'Abril Fatface', cursive;
 }
 
-#footerLogo{
-    display: flex;
-    justify-content: space-around;
-    
-    
-}
-.footerImg{
-    
-    width: 30px;
-    height:30px;
-}
-
-
-#footerTexto{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 30px;
-    height: 200px;
-    width: 25%;
-}
-
-#listaBoletos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color:  #F0FFC2;
-    padding: 30px;
-}
-
-#listaRedes{
-    display: flex;
-    
-}
-#listaRedes  li{
-    margin: 10px;
-
-}
-
-
-.tituloMensaje{
-    height: 2px;
-    padding: 0px;
-}
-
-.parrafoEventos{
-    background-color:#F0FFC2; 
-    padding: 30px;
-
-}
-
-.parrafoObras{
-    background-color:#F0FFC2; 
-    padding: 30px;
-}
-
-.containerObras{
-    background-color: rgb(219, 216, 216);
-    padding: 50px;
-}
-.containerObras img:hover{
-    box-shadow: 10px 10px 5px rgba(15, 82, 94, 0.514);
-}
-
-.containerObras img{
-    height:400px ;
-    width: 350px;
-}
-
-
-.obras{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.listaExpo{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #F0FFC2;
-}
-
-.info{
-    
-    border-width: 2px;
-    border-style: solid;
-    width: 300px;
-    margin-bottom: 50px;
+h5 {
+    color: sienna;
+     font-family: 'Abril Fatface', cursive;
+     padding: 30px 0px 30px 0px
 }
 
 
 
+@media (max-width: 1300px){
+    .obras {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+}
 
 @media (max-width: 900px) {
 
@@ -351,7 +391,7 @@ h4 {
         
     }
 
-    #footer{
+    .footer{
         background-color: darksalmon;
         display: flex;
         flex-direction: row;
@@ -370,47 +410,37 @@ h4 {
         grid-template-columns: 1fr 1fr;
     }
 
-    #tituloFooter{
+    .tituloFooter{
         padding: 30px 0px 30px 35px;
     }
-/* adsdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssd */
-    .listaExpo{
-        /* padding: 100px 0px 100px 25px; */
-        display: grid;
-        /* grid-template-columns: 2fr; */
-    }
 
-    #barraContactos{
+    .barraContactos{
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color:#F0FFC2 ;
     
        }
 
-       #listaBoletos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color:  #F0FFC2;
-        padding: 30px;
-        
-    }
+      
 
     .listahorarioPrecio{
         width: 250px;
         
     }
-    
+    .obras {
+        grid-template-columns: 1fr ;
+        
+    }
 
     
 }
 @media (max-width:760px){
-    #barraContactos{
+    .barraContactos{
         display: grid;
     grid-template-columns:  1fr;}
 }
 @media (max-width:650px){
     .listaExpo{
-        /* padding: 100px 0px 100px 25px; */
         display: grid;
          grid-template-columns: 1fr; 
     }
@@ -431,7 +461,7 @@ h4 {
         padding: 50px;
     }
 
-    #footer{
+    .footer{
         background-color: darksalmon;
         display: flex;
         flex-direction: column;
@@ -443,17 +473,12 @@ h4 {
         
     }    
 
-    .obras {
-        display: grid;
-        grid-template-columns: 1fr ;
-    }
-
-    #footerLogo{
+    .footerLogo{
     display: flex;
     justify-content: flex-start;  
     }
 
-    #listaRedes{
+    .listaRedes{
         padding: 30px 0px  30px
     }
 
@@ -463,7 +488,7 @@ h4 {
         width: 300px 
     }
 
-    #footerTexto{
+    .footerTexto{
     padding-left: 10px;
     font-size: 30px;
     height: 100px;
@@ -482,7 +507,7 @@ h4 {
         grid-template-columns: 1fr;
     }
 
-    #barraContactos{
+    .barraContactos{
         display: grid;
         
         background-color:#F0FFC2 ;
@@ -493,7 +518,7 @@ h4 {
            padding: 10px;
        }
 
-       #listaBoletos{
+       .listaBoletos{
         display: grid;
         grid-template-columns: 1fr;
         background-color:  #F0FFC2;

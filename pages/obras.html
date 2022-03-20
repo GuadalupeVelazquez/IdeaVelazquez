@@ -11,15 +11,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Didact+Gothic&display=swap" rel="stylesheet"> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     </head>
 <body>
     <header>
-        <div id="headerImg">
-        <img class="david" src="../img/icono david.png" alt="el david">
+        <div class="headerImg">
+            <img class="david" src="../img/icono david.png" alt="el david">
         </div>
-        <div id="navbarList">
-            <ul class="navBar"> <STYLE>A {text-decoration: none;} </STYLE>
+        <div class="navbarList">
+            <ul class="navBar"> 
                 <a class="enlaceNav" href="../index.html"><li>Inicio</li></a>
                 <a class="enlaceNav"  href="./contacto.html"><li>Contacto</li></a>
                 <a class="enlaceNav" href="./eventos.html"><li>Eventos</li></a>
@@ -27,50 +27,89 @@
                 <a class="enlaceNav"  href="./boletos.html"><li>Comprar Boletos</li></a>
             </ul>     
         </div>
-        <div id="navbarLogos">
-            <img class="imgHeader" src="../img/user.png">
-            <img class="imgHeader" src="../img/search.png">
+        <div class="navbarLogos">
+            <i class="bi bi-search"></i>
+          <i class="bi bi-person-square"></i>
         </div>
     </header>
     <div class="parrafoObras">
         <h1>Obras</h1>
     </div>
-    <div class="obras">
-    <div class="containerObras"> 
-        <img src="../img/realismo.jpg" class="rounded-3" alt="...">
-    </div>
-    <div class="containerObras"> 
-        <img  src=".././img/cubismo.jpg" class="rounded-3" alt="..." >
-    </div>
-    <div class="containerObras"> 
-        <img src=".././img/hijodel-hombre.jpg"class="rounded-3" alt="...">
-    </div>
-    <div class="containerObras"> 
-        <img src=".././img/serie-marilyn-0-cke.webp" class="rounded-3" alt="..." >
-    </div>
-    <div class="containerObras"> 
-        <img src=".././img/hiperrealismo.jpg" class="rounded-3" alt="...">
-    </div>
-    <div class="containerObras"> 
-        <img src=".././img/abstracto.webp"class="rounded-3" alt="...">
-    </div>
-    </div>
     
-    <h3 id="tituloFooter">Nuestras redes y ubicacion</h3>
-    <footer id="footer">
-        <div id="footerTexto">
-            <p class="texto"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</strong></p>
+    <div class="obras">
+        
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/realismo.jpg"  alt="...">
+                <div class="txt">
+                    <p><strong>Realismo</strong></p>
+                </div>
+            </figure>
         </div>
-        <div id="footerLogo">
-            <ul id="listaRedes">
-                <li><a href=""><img class="footerImg" src="../img/facebook.jpg"></a></li>
-                <li><a  href=""><img class="footerImg" src="../img/instagram.webp"></a></li>
-                <li><a  href=""><img class="footerImg" src="../img/wsp.png"></a></li>
-            </ul>
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/cubismo.jpg"  alt="...">
+                <div class="txt">
+                    <p><strong>Cubismo</strong></p>
+                </div>
+            </figure>
         </div>
-        <div class="mapouter"> 
-        <div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}</style><a href="https://www.embedgooglemap.net">google map embed iframe</a><style>.gmap_canvas {overflow:hidden;background:none!important;height: 300px;;width: 300px;}</style></div></div>
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/hijodel-hombre.jpg"  alt="...">
+                <div class="txt">
+                    <p><strong>Surrealismo</strong></p>
+                </div>
+            </figure>
         </div>
+
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/serie-marilyn-0-cke.webp"  alt="...">
+                <div class="txt">
+                    <p><strong>Pop Art</strong></p>
+                </div>
+            </figure>
+        </div>
+
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/hiperrealismo.jpg"  alt="...">
+                <div class="txt">
+                    <p><strong>Hiperrealismo</strong></p>
+                </div>
+            </figure>
+        </div>
+
+        <div class="containerObras"> 
+            <figure>
+                <img src="../img/abstracto.webp"  alt="...">
+                <div class="txt">
+                    <p><strong>Abstracto</strong></p>
+                </div>
+            </figure>
+        </div>
+        
+        
+    </div>      
+    <h3 class="tituloFooter">Nuestras redes y ubicacion</h3>
+    <footer>
+        <div class="row align-items-start">
+            <div class="col">
+                <p class="texto"><strong>Aqui podras encontrar nuestras redes, podes contactarnos ante cualquier duda y conocer mas de Galeria de artes Pupe.</strong></p>
+            </div>
+            <div class="col">
+                <ul class="listaRedes">
+                    <li><i class="bi bi-facebook"></i></li>
+                    <li><i class="bi bi-instagram"></i></li>
+                    <li><i class="bi bi-whatsapp"></i></li>
+                    
+                </ul>
+            </div>
+            <div class="col">
+                <div><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}</style><a href="https://www.embedgooglemap.net">google map embed iframe</a><style>.gmap_canvas {overflow:hidden;background:none!important;height: 300px;;width: 300px;}</style></div></div>
+            </div>
+          </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
