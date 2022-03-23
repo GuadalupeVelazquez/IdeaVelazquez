@@ -1,0 +1,374 @@
+header {
+  background-color: #cfebf3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+header .headerImg {
+  width: 25px;
+  height: 25px;
+}
+header .headerImg .david {
+  background-color: #c4e5f8;
+  width: 75px;
+  height: 75px;
+}
+header .navbarList {
+  background-color: #cfebf3;
+}
+header .navbarList .navBar {
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-style: double solid solid solid;
+  border-width: 5px;
+  padding: 10px;
+  border-color: #b9cdfc;
+  border-radius: 20px;
+  margin: 5px;
+}
+header .navbarList .navBar .enlaceNav {
+  text-decoration: none;
+}
+header .navbarList .navBar .enlaceNav li {
+  list-style: none;
+  padding: 10px;
+}
+header .navbarList .navBar .enlaceNav:hover {
+  background-color: rgba(153, 213, 241, 0.863);
+  transition: all 0.5s;
+  border-radius: 8px;
+  transform: scale(1.2);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+header .navbarLogos {
+  background-color: #cfebf3;
+}
+@media (max-width: 900px) {
+  header header {
+    background-color: #cfebf3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 500px) {
+  header header {
+    background-color: #cfebf3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.tituloFooter {
+  margin: 0%;
+  padding: 30px 0px 30px 15px;
+  background-color: #c2d0df;
+}
+
+footer {
+  background-color: #e9e8c1;
+}
+footer .texto {
+  margin-left: 10px;
+}
+footer .listaRedes {
+  display: flex;
+  list-style: none;
+}
+footer .listaRedes i {
+  padding: 10px;
+}
+
+main {
+  background-color: #f3ecc1;
+}
+main .tituloNoticias {
+  margin: 0px;
+  padding: 30px;
+  background-color: #dbdce0;
+}
+main .containerNoticias {
+  margin: 55px 0px 0px 20px;
+}
+main .col .card-img-top {
+  width: 285px;
+  height: 250px;
+}
+
+/* contactos */
+.barraContactos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F0FFC2;
+  padding: 10px;
+}
+
+.tituloContacto {
+  padding-left: 20px;
+}
+
+.tituloContactos {
+  background-color: #F0FFC2;
+  padding: 25px 0px 25px 0px;
+  margin: 0%;
+}
+
+.nombreContacto {
+  height: 20px;
+  width: 250px;
+  border-color: sienna;
+}
+
+.mailContacto {
+  height: 20px;
+  width: 250px;
+  border-color: sienna;
+}
+
+.mensajeContacto {
+  padding: 60px;
+  height: 20px;
+  width: 250px;
+  border-color: sienna;
+}
+
+/* fin de contactos */
+/* eventos */
+.tituloEventos {
+  padding: 20px;
+  background-color: #F0FFC2;
+  margin: 0%;
+}
+
+.parrafoEventos {
+  background-color: #F0FFC2;
+  padding: 30px;
+}
+
+.listaExpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F0FFC2;
+}
+
+.btn-outline-danger {
+  margin: 0px 0px 0px 12px;
+}
+
+.info {
+  border-width: 2px;
+  border-style: solid;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+/* fin de eventos */
+/* Boletos */
+.tituloBoletos {
+  margin: 0%;
+  background-color: #F0FFC2;
+}
+
+.listaBoletos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F0FFC2;
+  padding: 30px;
+}
+
+.listaUno {
+  border-style: solid;
+  border-width: 2px;
+  width: 500px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.listahorarioPrecio {
+  border-color: sienna;
+  border-style: solid;
+  border-width: 2px;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* fin de Boletos */
+/* obras */
+.obras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.parrafoObras {
+  background-color: #F0FFC2;
+  padding: 30px;
+}
+
+.containerObras {
+  background-color: #dbd8d8;
+  padding: 30px 15px;
+}
+
+.containerObras img {
+  height: 400px;
+  width: 350px;
+}
+
+.containerObras {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #dbd8d8;
+}
+
+.containerObras figure {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.containerObras figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.containerObras figure .txt {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(156, 157, 218, 0.452);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.containerObras figure:hover {
+  box-shadow: 20px 15px 25px #323b5583;
+}
+
+.containerObras figure:hover > .txt {
+  opacity: 1;
+  visibility: visible;
+}
+
+.containerObras figure .txt p {
+  margin: 150px;
+  transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+}
+
+/* fin de obras */
+/* Titulos */
+h1 {
+  color: #c080a8;
+  font-family: "Abril Fatface", cursive;
+}
+
+h2 {
+  color: sienna;
+  font-family: "Abril Fatface", cursive;
+}
+
+h3 {
+  color: sienna;
+  font-family: "Abril Fatface", cursive;
+}
+
+h4 {
+  color: sienna;
+  font-family: "Abril Fatface", cursive;
+}
+
+h5 {
+  color: sienna;
+  font-family: "Abril Fatface", cursive;
+  padding: 30px 0px 30px 0px;
+}
+
+@media (max-width: 1300px) {
+  .obras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .obras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .barraContactos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F0FFC2;
+  }
+
+  .listahorarioPrecio {
+    width: 250px;
+  }
+
+  .obras {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .barraContactos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .listaExpo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .containerContactos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .listaExpo {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .barraContactos {
+    display: grid;
+    background-color: #F0FFC2;
+  }
+
+  .listadosContactos {
+    padding: 10px;
+  }
+
+  .listaBoletos {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F0FFC2;
+    padding: 30px;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

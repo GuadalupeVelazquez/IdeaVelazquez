@@ -1,0 +1,26 @@
+ @import "../base/variables";
+ @import "../base/listas";
+
+.tituloFooter{
+    margin: 0%;
+    padding: 30px 0px 30px 15px;
+    background-color: $backgTitulos;
+}
+
+footer{
+    background-color: $backgFooter;
+    .texto{
+        margin-left: nth($size , 1 );
+    }
+    .listaRedes{
+        display: flex;
+        list-style: none;
+        i{
+            padding: nth($size, 1 );
+        }
+    }
+
+    
+
+}
+

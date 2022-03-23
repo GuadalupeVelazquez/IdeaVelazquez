@@ -1,0 +1,83 @@
+@import "../base/variables";
+@import "../base/listas";
+header{
+
+    background-color: $backgHeader;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .headerImg{
+        width: 25px;
+        height: 25px;
+
+        .david {
+            background-color: $backgroundDavid;
+            width: 75px;
+            height: 75px;
+
+        }
+
+    }
+
+    .navbarList{
+        background-color: $backgHeader;
+
+        .navBar{
+                width: 55vw;
+               display: flex;
+               justify-content: center;
+               flex-wrap: wrap;
+               border-style: double solid solid solid;
+               border-width: nth($size , 3 );
+               padding: nth($size , 1 );
+               border-color: $borderColor;
+               border-radius: nth($size, 2 );
+               margin: nth($size , 3 );
+             .enlaceNav{
+                      text-decoration: none;
+                     li{
+                        list-style: none;           
+                        padding: nth($size , 1 );
+                    }
+                    &:hover{
+                            background-color: $backgHover;
+                            transition: all 0.5s;
+                            border-radius: 8px;
+                            transform: scale(1.2);
+                            -moz-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                            -webkit-transition: all 0.5s;
+                            -webkit-transform: scale(1.2);
+                            -moz-transform: scale(1.2);
+                            -o-transform: scale(1.2);
+                    }
+                }
+        }
+    }
+
+    .navbarLogos{
+        background-color: $backgHeader;
+    }
+
+    @media (max-width: 900px) {
+        header{
+            background-color:$backgHeader ;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+    }
+
+
+    @media (max-width: 500px) {
+
+        header{
+            background-color:$backgHeader ;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+    }   }    
+
+   
+}

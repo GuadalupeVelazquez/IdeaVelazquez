@@ -1,0 +1,25 @@
+
+@import "../base/maps";
+main{
+    background-color: map-get($noticias , backgMain );
+    .tituloNoticias{
+        margin: 0px ;
+        padding: map-get($noticias , padingTitulo );
+        background-color:map-get($noticias , backgTitulo ) ;
+    }
+
+    .containerNoticias{
+        margin: 55px 0px 0px 20px;
+    }
+
+    .col .card-img-top{
+        width: 285px;
+        height: 250px;
+
+    }
+
+    
+    
+    
+}   
+
