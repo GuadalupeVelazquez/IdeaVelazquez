@@ -1,3 +1,120 @@
+// @import "../base/variables";
+// @import "../base/listas";
+// @import "../base/extends";
+// @import "../base/mixin";
+
+// header{
+
+//     @extend %disposicion;
+
+//     .headerImg{
+//         width: 25px;
+//         height: 25px;
+
+//         .david{
+//             background-color: $bcDavid;
+//             width: 3.75rem;
+//             height: 3.75rem;
+            
+//         }
+//     }
+
+
+
+
+//     .navbarList{
+//         display: flex;
+//         justify-content: space-evenly;
+
+//         .navBar{
+//             width: 55vw;
+//             display: flex;
+//             justify-content: center;
+//             flex-wrap: wrap;
+//             border-style: double solid solid solid;
+//             border-width: nth($size , 1 );
+//             padding: nth($size , 2 );
+//             border-color: $colorNav ;
+//             border-radius:nth($size , 3 ) ;
+//             margin: 5px;
+
+//             .enlaceNav{
+//                 text-decoration: none;
+//                li{
+//                   list-style: none;           
+//                   padding: 10px;
+//                   color: $navPalabra;  
+
+//                       &:hover {
+                      
+//                     background-color:$bcHover ;
+//                     transition: all 0.5s;
+//                     border-radius: 8px;
+//                     transform: scale(1.2);
+//                     -moz-transition: all 0.5s;
+//                     -o-transition:  all 0.5s;
+//                     -webkit-transition:  all 0.5s;
+//                     -webkit-transform:scale(1.2) ;
+//                     -moz-transform:scale(1.2) ;
+//                     -o-transform:scale(1.2) ;
+//                   }
+
+//                 }
+
+            
+                
+//             }
+//         }
+
+    
+//     }
+
+
+//     .navbarLogos{
+//         @include logosNav (flex,row,space-around);
+
+//         .logos{
+//             font-size: 20px;
+//             padding: 5px;
+//         }
+           
+        
+
+//     }
+
+// }
+
+// .carrusel{
+//     display: flex;
+//     justify-content: center ;
+//     padding: 20px;
+
+//     .carruselContainer{
+//         width: 80%;
+//         height: 80%;
+//     }
+// }
+
+// @media (max-width: 900px){
+//     header{
+
+        
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: nowrap;
+        
+
+//         .navbarList{
+//             padding-left: 15%;
+//         }    
+//     }
+
+//     .logos{
+//         font-size: 18px;
+//         padding: 5px;
+//     }
+// }
+
 @import "../base/variables";
 @import "../base/listas";
 header{

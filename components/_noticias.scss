@@ -1,4 +1,29 @@
 
+
+// main{
+    
+//     .tituloNoticias{
+//         margin: 0px ;
+//         padding: 30px;
+//     }
+
+//  .col{
+//      padding-left: 10px;
+
+//      .card-img-top{
+        
+//             width: 285px;
+//             height: 250px;
+    
+//         }
+//  }
+
+
+// }
+
+// @media (max-width: 500px){
+    
+// }
 @import "../base/maps";
 main{
     background-color: map-get($noticias , backgMain );

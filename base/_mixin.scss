@@ -1,0 +1,6 @@
+@mixin logosNav ($posicion, $direccion, $contenido){
+    display: $posicion;
+    flex-direction: $direccion;
+    justify-content: $contenido;
+}
+    
