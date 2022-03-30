@@ -1,50 +1,26 @@
 
 
-// main{
-    
-//     .tituloNoticias{
-//         margin: 0px ;
-//         padding: 30px;
-//     }
-
-//  .col{
-//      padding-left: 10px;
-
-//      .card-img-top{
-        
-//             width: 285px;
-//             height: 250px;
-    
-//         }
-//  }
-
-
-// }
-
-// @media (max-width: 500px){
-    
-// }
-@import "../base/maps";
 main{
-    background-color: map-get($noticias , backgMain );
+    
     .tituloNoticias{
         margin: 0px ;
-        padding: map-get($noticias , padingTitulo );
-        background-color:map-get($noticias , backgTitulo ) ;
+        padding: 30px;
     }
 
-    .containerNoticias{
-        margin: 55px 0px 0px 20px;
-    }
+ .col{
+     padding-left: 10px;
 
-    .col .card-img-top{
-        width: 285px;
-        height: 250px;
-
-    }
-
+     .card-img-top{
+        
+            width: 285px;
+            height: 250px;
     
-    
-    
-}   
+        }
+ }
 
+
+}
+
+@media (max-width: 500px){
+    
+}

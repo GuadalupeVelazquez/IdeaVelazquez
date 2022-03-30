@@ -1,200 +1,117 @@
-// @import "../base/variables";
-// @import "../base/listas";
-// @import "../base/extends";
-// @import "../base/mixin";
-
-// header{
-
-//     @extend %disposicion;
-
-//     .headerImg{
-//         width: 25px;
-//         height: 25px;
-
-//         .david{
-//             background-color: $bcDavid;
-//             width: 3.75rem;
-//             height: 3.75rem;
-            
-//         }
-//     }
-
-
-
-
-//     .navbarList{
-//         display: flex;
-//         justify-content: space-evenly;
-
-//         .navBar{
-//             width: 55vw;
-//             display: flex;
-//             justify-content: center;
-//             flex-wrap: wrap;
-//             border-style: double solid solid solid;
-//             border-width: nth($size , 1 );
-//             padding: nth($size , 2 );
-//             border-color: $colorNav ;
-//             border-radius:nth($size , 3 ) ;
-//             margin: 5px;
-
-//             .enlaceNav{
-//                 text-decoration: none;
-//                li{
-//                   list-style: none;           
-//                   padding: 10px;
-//                   color: $navPalabra;  
-
-//                       &:hover {
-                      
-//                     background-color:$bcHover ;
-//                     transition: all 0.5s;
-//                     border-radius: 8px;
-//                     transform: scale(1.2);
-//                     -moz-transition: all 0.5s;
-//                     -o-transition:  all 0.5s;
-//                     -webkit-transition:  all 0.5s;
-//                     -webkit-transform:scale(1.2) ;
-//                     -moz-transform:scale(1.2) ;
-//                     -o-transform:scale(1.2) ;
-//                   }
-
-//                 }
-
-            
-                
-//             }
-//         }
-
-    
-//     }
-
-
-//     .navbarLogos{
-//         @include logosNav (flex,row,space-around);
-
-//         .logos{
-//             font-size: 20px;
-//             padding: 5px;
-//         }
-           
-        
-
-//     }
-
-// }
-
-// .carrusel{
-//     display: flex;
-//     justify-content: center ;
-//     padding: 20px;
-
-//     .carruselContainer{
-//         width: 80%;
-//         height: 80%;
-//     }
-// }
-
-// @media (max-width: 900px){
-//     header{
-
-        
-//         display: flex;
-//         justify-content: space-between;
-//         flex-wrap: nowrap;
-        
-
-//         .navbarList{
-//             padding-left: 15%;
-//         }    
-//     }
-
-//     .logos{
-//         font-size: 18px;
-//         padding: 5px;
-//     }
-// }
-
 @import "../base/variables";
 @import "../base/listas";
+@import "../base/extends";
+@import "../base/mixin";
+
 header{
 
-    background-color: $backgHeader;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    @extend %disposicion;
 
     .headerImg{
         width: 25px;
         height: 25px;
 
-        .david {
-            background-color: $backgroundDavid;
-            width: 75px;
-            height: 75px;
-
+        .david{
+            background-color: $bcDavid;
+            width: 3.75rem;
+            height: 3.75rem;
+            
         }
-
     }
+
+
+
 
     .navbarList{
-        background-color: $backgHeader;
+        display: flex;
+        justify-content: space-evenly;
 
         .navBar{
-                width: 55vw;
-               display: flex;
-               justify-content: center;
-               flex-wrap: wrap;
-               border-style: double solid solid solid;
-               border-width: nth($size , 3 );
-               padding: nth($size , 1 );
-               border-color: $borderColor;
-               border-radius: nth($size, 2 );
-               margin: nth($size , 3 );
-             .enlaceNav{
-                      text-decoration: none;
-                     li{
-                        list-style: none;           
-                        padding: nth($size , 1 );
-                    }
-                    &:hover{
-                            background-color: $backgHover;
-                            transition: all 0.5s;
-                            border-radius: 8px;
-                            transform: scale(1.2);
-                            -moz-transition: all 0.5s;
-                            -o-transition: all 0.5s;
-                            -webkit-transition: all 0.5s;
-                            -webkit-transform: scale(1.2);
-                            -moz-transform: scale(1.2);
-                            -o-transform: scale(1.2);
-                    }
+            width: 55vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-style: double solid solid solid;
+            border-width: nth($size , 1 );
+            padding: nth($size , 2 );
+            border-color: $colorNav ;
+            border-radius:nth($size , 3 ) ;
+            margin: 5px;
+
+            .enlaceNav{
+                text-decoration: none;
+               li{
+                  list-style: none;           
+                  padding: 10px;
+                  color: $navPalabra;  
+
+                      &:hover {
+                      
+                    background-color:$bcHover ;
+                    transition: all 0.5s;
+                    border-radius: 8px;
+                    transform: scale(1.2);
+                    -moz-transition: all 0.5s;
+                    -o-transition:  all 0.5s;
+                    -webkit-transition:  all 0.5s;
+                    -webkit-transform:scale(1.2) ;
+                    -moz-transform:scale(1.2) ;
+                    -o-transform:scale(1.2) ;
+                  }
+
                 }
+
+            
+                
+            }
         }
+
+    
     }
+
 
     .navbarLogos{
-        background-color: $backgHeader;
-    }
+        @include logosNav (flex,row,space-around);
 
-    @media (max-width: 900px) {
-        header{
-            background-color:$backgHeader ;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
+        .logos{
+            font-size: 20px;
+            padding: 5px;
         }
+           
+        
+
     }
 
-
-    @media (max-width: 500px) {
-
-        header{
-            background-color:$backgHeader ;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-    }   }    
-
-   
 }
+
+.carrusel{
+    display: flex;
+    justify-content: center ;
+    padding: 20px;
+
+    .carruselContainer{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 900px){
+    header{
+
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        
+
+        .navbarList{
+            padding-left: 15%;
+        }    
+    }
+
+    .logos{
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
