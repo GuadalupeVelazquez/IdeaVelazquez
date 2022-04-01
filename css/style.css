@@ -109,45 +109,16 @@ main .col .card-img-top {
   height: 250px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-/* contactos */
-.barraContactos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-}
-
-.tituloContactos {
-  padding: 25px 0px 25px 0px;
-  margin: 0%;
-}
-
-.contactosDos {
-  padding: 30px;
-}
-
-/* fin de contactos */
-/* eventos */
 .tituloEventos {
   padding: 20px;
   margin: 0%;
-}
-
-.parrafoEventos {
-  padding: 30px;
 }
 
 .listaExpo {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.Eventos {
+.listaExpo .Eventos {
   border-color: #e0ddd8;
   border-style: solid;
   border-width: 1px;
@@ -155,28 +126,81 @@ header {
   padding: 10px;
   margin: 10px;
 }
-
-.btn-outline-danger {
-  margin: 0px 0px 0px 12px;
-}
-
-.info {
+.listaExpo .Eventos .info {
   display: flex;
   border-width: 2px;
   margin-bottom: 50px;
 }
-
-.porcelana {
+.listaExpo .Eventos .info .eventoImagen {
+  display: flex;
+  justify-content: center;
+}
+.listaExpo .Eventos .info .eventoImagen .porcelana {
   width: 90px;
   height: 90px;
 }
-
-.Eventos p {
+.listaExpo .Eventos .info .eventoImagen .porcelana .parrafoEvento {
   text-align: center;
 }
 
-/* fin de eventos */
-/* Boletos */
+@media (max-width: 934px) {
+  .Eventos {
+    justify-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .listaExpo {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .listaExpo .Eventos {
+    width: 250px;
+    height: 300px;
+  }
+  .listaExpo .Eventos .info {
+    flex-direction: column;
+  }
+  .listaExpo .Eventos .info .eventoImagen {
+    display: flex;
+    justify-content: center;
+  }
+  .listaExpo .Eventos .info .eventoImagen .btn-outline-danger {
+    display: flex;
+    justify-content: center;
+  }
+}
+.tituloContactos {
+  padding: 25px 0px 25px 0px;
+  margin: 0%;
+}
+
+.barraContactos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.barraContactos .contactosDos {
+  padding: 30px;
+}
+
+@media (max-width: 760px) {
+  .barraContactos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .barraContactos {
+    display: grid;
+  }
+  .barraContactos .contactos {
+    width: 250px;
+  }
+  .barraContactos .contactos .listadosContactos {
+    padding: 10px;
+  }
+}
 .tituloBoletos {
   margin: 0%;
 }
@@ -186,15 +210,7 @@ header {
   grid-template-columns: 1fr 1fr;
   padding: 30px;
 }
-
-.listaUno {
-  border-style: solid;
-  border-width: 1px;
-  padding-left: 10px;
-  margin-left: 10px;
-}
-
-.listahorarioPrecio {
+.listaBoletos .listahorarioPrecio {
   border-color: #e0ddd8;
   border-style: solid;
   border-width: 1px;
@@ -202,45 +218,62 @@ header {
   margin: 10px;
 }
 
-/* fin de Boletos */
-/* obras */
-.obras {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+@media (max-width: 900px) {
+  .listahorarioPrecio {
+    width: 250px;
+  }
 }
-
+@media (max-width: 760px) {
+  .listaBoletos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .listaBoletos .listahorarioPrecio {
+    justify-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .listaBoletos {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    align-items: center;
+  }
+}
 .parrafoObras {
   padding: 30px;
 }
 
-.containerObras {
-  padding: 30px 15px;
+.obras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
-.containerObras img {
-  height: 400px;
-  width: 350px;
-}
-
-.containerObras {
+.obras .containerObras {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 30px 15px;
 }
-
-.containerObras figure {
+.obras .containerObras figure {
   position: relative;
   overflow: hidden;
   border-radius: 100px;
 }
-
-.containerObras figure img {
+.obras .containerObras figure:hover {
+  box-shadow: 20px 15px 25px #323b5583;
+}
+.obras .containerObras figure:hover .txt {
+  opacity: 1;
+  visibility: visible;
+}
+.obras .containerObras figure img {
+  height: 400px;
+  width: 350px;
   transition: all 500ms ease-out;
 }
-
-.containerObras figure .txt {
+.obras .containerObras figure .txt {
   position: absolute;
   top: 0;
   width: 100%;
@@ -251,17 +284,7 @@ header {
   visibility: hidden;
   text-align: center;
 }
-
-.containerObras figure:hover {
-  box-shadow: 20px 15px 25px #323b5583;
-}
-
-.containerObras figure:hover > .txt {
-  opacity: 1;
-  visibility: visible;
-}
-
-.containerObras figure .txt p {
+.obras .containerObras figure .txt p {
   margin: 150px;
   transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
@@ -269,6 +292,19 @@ header {
   -webkit-transition: all 500ms ease-out;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* contactos */
+/* fin de contactos */
+/* eventos */
+/* fin de eventos */
+/* Boletos */
+/* fin de Boletos */
+/* obras */
 /* fin de obras */
 /* Titulos */
 h1 {
@@ -297,30 +333,7 @@ h5 {
   padding: 30px 0px 30px 0px;
 }
 
-@media (max-width: 1300px) {
-  .obras {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 934px) {
-  .listaExpo {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-  }
-
-  .Eventos {
-    justify-self: center;
-  }
-}
 @media (max-width: 900px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
   .footer {
     background-color: darksalmon;
     display: flex;
@@ -331,39 +344,6 @@ h5 {
   .contenedorNoticias {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .obras {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .barraContactos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .listahorarioPrecio {
-    width: 250px;
-  }
-
-  .obras {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 760px) {
-  .barraContactos {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .listaBoletos {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .listahorarioPrecio {
-    justify-self: center;
   }
 }
 @media (max-width: 500px) {
@@ -411,16 +391,6 @@ h5 {
     grid-template-columns: 1fr;
   }
 
-  .listaExpo {
-    padding-left: 25px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
   .barraContactos {
     display: grid;
   }
@@ -429,47 +399,12 @@ h5 {
     padding: 10px;
   }
 
-  .listaBoletos {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 30px;
-    align-items: center;
-  }
-
-  .Eventos {
-    width: 250px;
-    height: 300px;
-  }
-
-  .eventoImagen {
-    display: flex;
-    justify-content: center;
-  }
-
-  .eventoBoton {
-    display: flex;
-    justify-content: center;
-  }
-
   .contactos {
     width: 250px;
   }
 
   .comentario {
     width: 250px;
-  }
-
-  .containerObras img {
-    height: 300px;
-    width: 250px;
-  }
-
-  .containerObras figure .txt p {
-    margin: 100px;
-    transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -webkit-transition: all 500ms ease-out;
   }
 }
 

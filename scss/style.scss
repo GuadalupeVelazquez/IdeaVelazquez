@@ -2,6 +2,10 @@
 @import "../component/header";
 @import "../component/footer";
 @import "../component/noticias";
+@import "../component/eventos";
+@import "../component/contacto";
+@import "../component/boletos";
+@import "../component/obras";
 @import "../base/maps";
 @import "../base/extends";
 @import "../base/mixin";
@@ -12,25 +16,25 @@
 
 /* contactos */
 
-.barraContactos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
+// .barraContactos{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     padding: 10px;
 
-   }
+//    }
 
 
-   .tituloContactos{
+//    .tituloContactos{
       
-       padding: 25px 0px 25px 0px;
-       margin: 0%;
-   }
+//        padding: 25px 0px 25px 0px;
+//        margin: 0%;
+//    }
 
 
 
-   .contactosDos{
-       padding: 30px;
-   }
+//    .contactosDos{
+//        padding: 30px;
+//    }
 
    
    
@@ -40,56 +44,56 @@
 
 /* eventos */
 
-.tituloEventos{
-    padding: 20px;
+// .tituloEventos{
+//     padding: 20px;
     
-    margin: 0%;
-}
+//     margin: 0%;
+// }
 
-.parrafoEventos{
+// .parrafoEventos{
     
-    padding: 30px;
+//     padding: 30px;
 
-}
+// }
 
-.listaExpo{
+// .listaExpo{
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
     
-}
+// }
 
-.Eventos{
-    border-color: rgb(224, 221, 216);
-    border-style:solid;
-    border-width: 1px;
-    width: 450px;
-    padding: 10px;
-    margin: 10px;
-}
+// .Eventos{
+//     border-color: rgb(224, 221, 216);
+//     border-style:solid;
+//     border-width: 1px;
+//     width: 450px;
+//     padding: 10px;
+//     margin: 10px;
+// }
 
-.btn-outline-danger {
-    margin: 0px 0px 0px 12px;
+// .btn-outline-danger {
+//     margin: 0px 0px 0px 12px;
     
-}
+// }
 
-.info{
-    display: flex;
+// .info{
+//     display: flex;
     
-    border-width: 2px;
+//     border-width: 2px;
     
-    margin-bottom: 50px;
-}
+//     margin-bottom: 50px;
+// }
 
-.porcelana{
-    width: 90px;
-    height: 90px;
-}
+// .porcelana{
+//     width: 90px;
+//     height: 90px;
+// }
 
-.Eventos p{
+// .Eventos p{
     
-    text-align:center;
-}
+//     text-align:center;
+// }
 
 /* fin de eventos */
 
@@ -98,33 +102,33 @@
 
 /* Boletos */
 
-.tituloBoletos{
-    margin: 0%;
+// .tituloBoletos{
+//     margin: 0%;
     
-}
+// }
 
-.listaBoletos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+// .listaBoletos{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
    
-    padding: 30px;
-}
+//     padding: 30px;
+// }
 
 
-.listaUno {
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 10px;
-    margin-left: 10px;
-   }
+// .listaUno {
+//     border-style: solid;
+//     border-width: 1px;
+//     padding-left: 10px;
+//     margin-left: 10px;
+//    }
 
-   .listahorarioPrecio {
-    border-color: rgb(224, 221, 216);
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-   }
+//    .listahorarioPrecio {
+//     border-color: rgb(224, 221, 216);
+//     border-style: solid;
+//     border-width: 1px;
+//     padding: 10px;
+//     margin: 10px;
+//    }
 
    
 
@@ -135,84 +139,84 @@
 
 /* obras */
 
-.obras{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+// .obras{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
 
-.parrafoObras{
+// .parrafoObras{
    
-    padding: 30px;
-}
+//     padding: 30px;
+// }
 
-.containerObras{
+// .containerObras{
    
-    padding: 30px 15px;
-}
+//     padding: 30px 15px;
+// }
 
 
-.containerObras img{
-    height:400px ;
-    width: 350px;
-}
+// .containerObras img{
+//     height:400px ;
+//     width: 350px;
+// }
 
-.containerObras{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+// .containerObras{
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
     
-}
+// }
 
-.containerObras figure{
-    position: relative;
+// .containerObras figure{
+//     position: relative;
     
-    overflow: hidden;
-    border-radius: 100px;
+//     overflow: hidden;
+//     border-radius: 100px;
     
-}
+// }
 
-.containerObras figure img{
+// .containerObras figure img{
    
-    transition: all 500ms ease-out;
+//     transition: all 500ms ease-out;
     
-}
+// }
 
-.containerObras figure .txt{
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(156, 157, 218, 0.603);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+// .containerObras figure .txt{
+//     position: absolute;
+//     top:0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(156, 157, 218, 0.603);
+//     transition: all 500ms ease-out;
+//     opacity: 0;
+//     visibility: hidden;
+//     text-align: center;
     
     
-}
+// }
 
-.containerObras figure:hover{
-    box-shadow: 20px 15px 25px
-    #323b5583;
+// .containerObras figure:hover{
+//     box-shadow: 20px 15px 25px
+//     #323b5583;
     
     
-}
+// }
 
-.containerObras figure:hover > .txt{
-    opacity: 1;
-    visibility: visible;
+// .containerObras figure:hover > .txt{
+//     opacity: 1;
+//     visibility: visible;
     
-}
+// }
 
-.containerObras figure .txt p{
-    margin: 150px;
-    transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out ;
-    -o-transition: all 500ms ease-out; 
-    -webkit-transition: all 500ms ease-out; 
-}
+// .containerObras figure .txt p{
+//     margin: 150px;
+//     transition: all 500ms ease-out;
+//     -moz-transition: all 500ms ease-out ;
+//     -o-transition: all 500ms ease-out; 
+//     -webkit-transition: all 500ms ease-out; 
+// }
 
 
 /* fin de obras */
@@ -246,38 +250,38 @@ h5 {
 
 
 
-@media (max-width: 1300px){
-    .obras {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
+// @media (max-width: 1300px){
+//     .obras {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr ;
         
-    }
-}
+//     }
+// }
 
 
-@media (max-width: 934px){
-    .listaExpo{
-        display: grid;
-         grid-template-columns: 1fr ;
-        align-content: center;   
-    }
+// @media (max-width: 934px){
+//     .listaExpo{
+//         display: grid;
+//          grid-template-columns: 1fr ;
+//         align-content: center;   
+//     }
 
-    .Eventos{
-        justify-self: center;
-    }
+//     .Eventos{
+//         justify-self: center;
+//     }
 
 
     
-}
+// }
 
 @media (max-width: 900px) {
 
-    header{
+    // header{
         
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: nowrap;
+    // }
 
     // .contenedorNoticias div{
     //     display: flex;
@@ -301,32 +305,32 @@ h5 {
         
     }   
     
-    .obras {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    // .obras {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    // }
 
     // .tituloFooter{
     //     padding: 30px 0px 30px 35px;
     // }
 
-    .barraContactos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    // .barraContactos{
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
        
     
-       }
+    //    }
 
       
 
-    .listahorarioPrecio{
-        width: 250px;
+    // .listahorarioPrecio{
+    //     width: 250px;
         
-    }
-    .obras {
-        grid-template-columns: 1fr ;
+    // }
+    // .obras {
+    //     grid-template-columns: 1fr ;
         
-    }
+    // }
 
 
     
@@ -334,25 +338,25 @@ h5 {
 
 
 
-@media (max-width:760px){
-    .barraContactos{
-        display: grid;
-    grid-template-columns:  1fr;
-    }
+// @media (max-width:760px){
+//     .barraContactos{
+//         display: grid;
+//     grid-template-columns:  1fr;
+//     }
 
-    .listaBoletos{
-        display: grid;
-        grid-template-columns: 1fr;
+    // .listaBoletos{
+    //     display: grid;
+    //     grid-template-columns: 1fr;
         
-    }
-    .listahorarioPrecio{
-        justify-self: center;
-    }
+    // }
+    // .listahorarioPrecio{
+    //     justify-self: center;
+    // }
 
    
 
 
-}
+// }
     
 
 @media (max-width: 500px) {
@@ -411,15 +415,15 @@ h5 {
         
        }
 
-       .listaExpo{
-        padding-left:25px; 
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .info{
-        flex-direction: column;
+    //    .listaExpo{
+    //     padding-left:25px; 
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    // }
+    // .info{
+    //     flex-direction: column;
         
-    }
+    // }
 
 
 
@@ -435,27 +439,27 @@ h5 {
            padding: 10px;
        }
 
-       .listaBoletos{
-        display: grid;
-        grid-template-columns: 1fr;
+    //    .listaBoletos{
+    //     display: grid;
+    //     grid-template-columns: 1fr;
         
-        padding: 30px;
-        align-items: center;
-        }
+    //     padding: 30px;
+    //     align-items: center;
+    //     }
         
 
-        .Eventos{
-            width: 250px;
-            height: 300px;
-        }
-        .eventoImagen{
-            display: flex;
-            justify-content: center;
-        }
-        .eventoBoton{
-            display: flex;
-            justify-content: center;
-        }
+        // .Eventos{
+        //     width: 250px;
+        //     height: 300px;
+        // }
+        // .eventoImagen{
+        //     display: flex;
+        //     justify-content: center;
+        // }
+        // .eventoBoton{
+        //     display: flex;
+        //     justify-content: center;
+        // }
         
 
         .contactos{
@@ -466,19 +470,19 @@ h5 {
             width: 250px;
         }
 
-        .containerObras img{
-            height:300px ;
-            width: 250px;
-        }
+        // .containerObras img{
+        //     height:300px ;
+        //     width: 250px;
+        // }
 
         
-        .containerObras figure .txt p{
-            margin: 100px;
-            transition: all 500ms ease-out;
-            -moz-transition: all 500ms ease-out ;
-            -o-transition: all 500ms ease-out; 
-            -webkit-transition: all 500ms ease-out; 
-        }
+        // .containerObras figure .txt p{
+        //     margin: 100px;
+        //     transition: all 500ms ease-out;
+        //     -moz-transition: all 500ms ease-out ;
+        //     -o-transition: all 500ms ease-out; 
+        //     -webkit-transition: all 500ms ease-out; 
+        // }
 
 
     
