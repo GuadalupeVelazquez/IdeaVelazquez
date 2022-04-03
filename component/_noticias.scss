@@ -1,16 +1,31 @@
-
+@import "../base/variables";
 
 main{
     
+
     .tituloNoticias{
-        margin: 0px ;
-        padding: 30px;
+        color: $titulos;
+        padding: 10px;
+        font-family:'Times New Roman', Times, serif;
     }
 
- .col{
-     padding-left: 10px;
+    .col{
+        padding-left: 10px;
+        .anchoTarjeta{
+            width: 18rem;
 
-     .card-img-top{
+            .botonNoticias{
+                color: #212529;
+                border-color: #212529;
+                &:hover{
+                    color: #fff;
+                    background-color: #212529;
+                    border-color: #212529;
+                }
+            }
+
+        }
+        .card-img-top{
         
             width: 285px;
             height: 250px;
@@ -21,6 +36,3 @@ main{
 
 }
 
-@media (max-width: 500px){
-    
-}

@@ -1,10 +1,23 @@
+@import "../base/variables";
+@import "../base/mixin";
+
 .tituloBoletos{
-    margin: 0%;
+    color: $titulos;
+    font-family:'Times New Roman', Times, serif;
+}
+
+// .tituloPrecio{
+//     color: $titulosVarios;
+// }
+
+.tituloHorario{
+    color: $titulosVarios;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .listaBoletos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include boletosLista (grid,1fr 1fr);
+    
     padding: 30px;
 
     .listahorarioPrecio {
@@ -13,23 +26,27 @@
         border-width: 1px;
         padding: 10px;
         margin: 10px;
+
+        .tituloPrecio{
+            color: $titulosVarios;
+            font-family:'Times New Roman', Times, serif;
+
+            .tituloHorario{
+                color: $titulosVarios;
+                font-family:'Times New Roman', Times, serif;
+            }
+        }
        }
 }
 
-@media (max-width: 900px){
-    .listahorarioPrecio{
-        width: 250px;   
-    }
-}
+
 
 @media (max-width:760px){
     .listaBoletos{
         display: grid;
         grid-template-columns: 1fr;
         
-        .listahorarioPrecio{
-            justify-self: center;
-        }
+        
     }
 }
 

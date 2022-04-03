@@ -1,5 +1,10 @@
+@import "../base/variables";
+
+
 .parrafoObras{
     padding: 30px;
+    color: $titulos;
+    font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -54,3 +59,29 @@
     }
     }
  }}
+
+ @media (max-width: 1300px){
+    .obras {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+}
+
+
+@media (max-width: 900px){
+    .obras {
+        grid-template-columns: 1fr ;
+            
+        }
+}
+
+@media (max-width: 500px){
+        figure{
+        
+            height: 300px;
+            width: 280px;
+            }
+        
+    
+}

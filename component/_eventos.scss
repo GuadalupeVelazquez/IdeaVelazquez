@@ -1,56 +1,82 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+
+
 .tituloEventos{
-    padding: 20px;
+    padding: nth($size , 3 );
     margin: 0%;
+    color: $titulos;
+    font-family:'Times New Roman', Times, serif;
 }
 
+
 .listaExpo{
+   
     display: grid;
     grid-template-columns: 1fr 1fr;
     
     .Eventos{
-        border-color: rgb(224, 221, 216);
-        border-style:solid;
-        border-width: 1px;
-        width: 450px;
-        padding: 10px;
-        margin: 10px;
+        border-color: map-get($eventos , bordeColor );
+        border-style:map-get($eventos , estiloBorde );
+        border-width: map-get($eventos , anchoBorde );
+        width: map-get($eventos , ancho );
+        padding: nth($size , 2 );
+        margin: nth($size , 2 );
        
+        .tituloEvent{
+            color: $titulosVarios;
+            font-family:'Times New Roman', Times, serif;
+        }
+        
+
         .info{
             display: flex;
             
             border-width: 2px;
             
-            margin-bottom: 50px;
+            margin-bottom: nth($size , 5 );
 
             .eventoImagen{
                 display: flex;
                 justify-content: center;
 
                 .porcelana{
-                    width: 90px;
-                    height: 90px;
-
-                     .parrafoEvento{
-                        text-align:center;
+                    width: nth($size , 4 );
+                    height: nth($size , 4 );
                     }
-                    //     .btn-outline-danger {
-                    //             margin: 0px 0px 0px 12px;
-                    //  }  }
-                }
+                   
+             }
+            
+             .parrafoEvento{
+                text-align:center;
+            }
+
+            .botonEventos{
+                color: #6c757d;
+                border-color: #6c757d;
             }
         }
     }
 }
 
-@media (max-width: 934px){
-    .Eventos{
-        justify-self: center;
-    }
+@media (max-width: 938px){
+
+
+    .listaExpo{
+                display: grid;
+                 grid-template-columns: 1fr ;
+                align-content: center;   
+
+                .Eventos{
+                        justify-self: center;
+                    }
+            }
 }
 
 @media (max-width: 500px){
     .listaExpo{
-        padding-left:25px; 
+        
         display: grid;
         grid-template-columns: 1fr;
     
@@ -64,11 +90,10 @@
                 .eventoImagen{
                     display: flex;
                     justify-content: center;
-
-                    .btn-outline-danger{
-                        display: flex;
-                        justify-content: center;
-                    }
+                }
+                .eventoBoton{
+                    display: contents;
+                    
                 }
                 
             }

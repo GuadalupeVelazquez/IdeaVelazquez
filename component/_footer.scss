@@ -1,8 +1,11 @@
 @import "../base/maps";
+@import "../base/variables";
 
 .tituloFooter{
     margin: 0%;
     padding: map-get($footer , tituloPd );
+    color: $titulos;
+    font-family:'Times New Roman', Times, serif;
 }
 
 footer{

@@ -3,4 +3,7 @@
     flex-direction: $direccion;
     justify-content: $contenido;
 }
-    
+    @mixin boletosLista ($posicion, $columna) {
+        display: $posicion;
+        grid-template-columns: $columna;
+    }

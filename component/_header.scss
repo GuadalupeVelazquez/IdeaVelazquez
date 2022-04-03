@@ -3,6 +3,12 @@
 @import "../base/extends";
 @import "../base/mixin";
 
+.tituloIndex{
+    color: $titulos;
+    font-family:'Times New Roman', Times, serif;
+    }
+
+
 header{
 
     @extend %disposicion;

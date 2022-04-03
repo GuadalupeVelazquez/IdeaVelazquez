@@ -4,6 +4,11 @@ header {
   flex-wrap: nowrap;
 }
 
+.tituloIndex {
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
+}
+
 header .headerImg {
   width: 25px;
   height: 25px;
@@ -87,6 +92,8 @@ header .navbarLogos .logos {
 .tituloFooter {
   margin: 0%;
   padding: 30px 0px 30px 15px;
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
 }
 
 footer .listaRedes {
@@ -98,11 +105,24 @@ footer .listaRedes li {
 }
 
 main .tituloNoticias {
-  margin: 0px;
-  padding: 30px;
+  color: #f5be77;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 main .col {
   padding-left: 10px;
+}
+main .col .anchoTarjeta {
+  width: 18rem;
+}
+main .col .anchoTarjeta .botonNoticias {
+  color: #212529;
+  border-color: #212529;
+}
+main .col .anchoTarjeta .botonNoticias:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
 }
 main .col .card-img-top {
   width: 285px;
@@ -112,6 +132,8 @@ main .col .card-img-top {
 .tituloEventos {
   padding: 20px;
   margin: 0%;
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .listaExpo {
@@ -126,6 +148,10 @@ main .col .card-img-top {
   padding: 10px;
   margin: 10px;
 }
+.listaExpo .Eventos .tituloEvent {
+  color: rgba(116, 112, 112, 0.904);
+  font-family: "Times New Roman", Times, serif;
+}
 .listaExpo .Eventos .info {
   display: flex;
   border-width: 2px;
@@ -139,18 +165,26 @@ main .col .card-img-top {
   width: 90px;
   height: 90px;
 }
-.listaExpo .Eventos .info .eventoImagen .porcelana .parrafoEvento {
+.listaExpo .Eventos .info .parrafoEvento {
   text-align: center;
 }
+.listaExpo .Eventos .info .botonEventos {
+  color: #6c757d;
+  border-color: #6c757d;
+}
 
-@media (max-width: 934px) {
-  .Eventos {
+@media (max-width: 938px) {
+  .listaExpo {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+  .listaExpo .Eventos {
     justify-self: center;
   }
 }
 @media (max-width: 500px) {
   .listaExpo {
-    padding-left: 25px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -165,14 +199,15 @@ main .col .card-img-top {
     display: flex;
     justify-content: center;
   }
-  .listaExpo .Eventos .info .eventoImagen .btn-outline-danger {
-    display: flex;
-    justify-content: center;
+  .listaExpo .Eventos .info .eventoBoton {
+    display: contents;
   }
 }
 .tituloContactos {
   padding: 25px 0px 25px 0px;
   margin: 0%;
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .barraContactos {
@@ -180,8 +215,31 @@ main .col .card-img-top {
   grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
+.barraContactos .tituloLista {
+  color: rgba(116, 112, 112, 0.904);
+  font-family: "Times New Roman", Times, serif;
+}
+.barraContactos .listaInfo {
+  color: rgba(116, 112, 112, 0.904);
+  padding: 30px 0px 30px 0px;
+  font-family: "Times New Roman", Times, serif;
+}
 .barraContactos .contactosDos {
   padding: 30px;
+}
+.barraContactos .listaMensaje {
+  min-height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+.barraContactos .botonContacto {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
 }
 
 @media (max-width: 760px) {
@@ -189,20 +247,26 @@ main .col .card-img-top {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .barraContactos .listadosContactos {
+    padding: 10px;
+  }
 }
 @media (max-width: 500px) {
   .barraContactos {
     display: grid;
   }
-  .barraContactos .contactos {
+  .barraContactos .comentario {
     width: 250px;
-  }
-  .barraContactos .contactos .listadosContactos {
-    padding: 10px;
   }
 }
 .tituloBoletos {
-  margin: 0%;
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tituloHorario {
+  color: rgba(116, 112, 112, 0.904);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .listaBoletos {
@@ -217,19 +281,19 @@ main .col .card-img-top {
   padding: 10px;
   margin: 10px;
 }
-
-@media (max-width: 900px) {
-  .listahorarioPrecio {
-    width: 250px;
-  }
+.listaBoletos .listahorarioPrecio .tituloPrecio {
+  color: rgba(116, 112, 112, 0.904);
+  font-family: "Times New Roman", Times, serif;
 }
+.listaBoletos .listahorarioPrecio .tituloPrecio .tituloHorario {
+  color: rgba(116, 112, 112, 0.904);
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media (max-width: 760px) {
   .listaBoletos {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  .listaBoletos .listahorarioPrecio {
-    justify-self: center;
   }
 }
 @media (max-width: 500px) {
@@ -242,6 +306,8 @@ main .col .card-img-top {
 }
 .parrafoObras {
   padding: 30px;
+  color: #f5be77;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .obras {
@@ -292,120 +358,27 @@ main .col .card-img-top {
   -webkit-transition: all 500ms ease-out;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-/* contactos */
-/* fin de contactos */
-/* eventos */
-/* fin de eventos */
-/* Boletos */
-/* fin de Boletos */
-/* obras */
-/* fin de obras */
-/* Titulos */
-h1 {
-  color: #f5be77;
-  font-family: "Abril Fatface", cursive;
-}
-
-h2 {
-  color: #f5be77;
-  font-family: "Abril Fatface", cursive;
-}
-
-h3 {
-  color: #f7bb6e;
-  font-family: "Abril Fatface", cursive;
-}
-
-h4 {
-  color: #f7bb6e;
-  font-family: "Abril Fatface", cursive;
-}
-
-h5 {
-  color: #f7bb6e;
-  font-family: "Abril Fatface", cursive;
-  padding: 30px 0px 30px 0px;
-}
-
-@media (max-width: 900px) {
-  .footer {
-    background-color: darksalmon;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .contenedorNoticias {
+@media (max-width: 1300px) {
+  .obras {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (max-width: 900px) {
+  .obras {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 500px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+  figure {
+    height: 300px;
+    width: 280px;
   }
-
-  .footer {
-    background-color: darksalmon;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contenedorNoticias {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .footerLogo {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .listaRedes {
-    padding: 30px 0px 30px;
-  }
-
-  .gmap_canvas {
-    display: flex;
-    align-items: flex-end;
-    width: 300px;
-  }
-
-  .footerTexto {
-    padding-left: 10px;
-    font-size: 30px;
-    height: 100px;
-    width: 25%;
-  }
-
-  .containerContactos {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .barraContactos {
-    display: grid;
-  }
-
-  .listadosContactos {
-    padding: 10px;
-  }
-
-  .contactos {
-    width: 250px;
-  }
-
-  .comentario {
-    width: 250px;
-  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */
