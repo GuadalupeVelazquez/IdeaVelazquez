@@ -1,16 +1,17 @@
 {
   "name": "ideavelazquez",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina de arte creada por guadalupe velazquez, enfocada a ser una galeria informativa de artes en la web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GuadalupeVelazquez/IdeaVelazquez.git"
   },
-  "author": "",
+  "author": "Guadalupe Velazquez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GuadalupeVelazquez/IdeaVelazquez/issues"
