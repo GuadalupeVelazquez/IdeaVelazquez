@@ -16,11 +16,14 @@ header{
     .headerImg{
         width: 25px;
         height: 25px;
+        padding: 5px;
 
         .david{
             background-color: $bcDavid;
             width: 3.75rem;
             height: 3.75rem;
+            border-radius: 10px;
+            
             
         }
     }

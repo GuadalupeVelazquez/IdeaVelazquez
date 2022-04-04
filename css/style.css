@@ -12,11 +12,13 @@ header {
 header .headerImg {
   width: 25px;
   height: 25px;
+  padding: 5px;
 }
 header .headerImg .david {
   background-color: rgba(245, 190, 119, 0.685);
   width: 3.75rem;
   height: 3.75rem;
+  border-radius: 10px;
 }
 header .navbarList {
   display: flex;
@@ -124,7 +126,7 @@ main .col .anchoTarjeta .botonNoticias:hover {
   background-color: #212529;
   border-color: #212529;
 }
-main .col .card-img-top {
+main .col .cardImg {
   width: 285px;
   height: 250px;
 }
@@ -351,7 +353,7 @@ main .col .card-img-top {
   text-align: center;
 }
 .obras .containerObras figure .txt p {
-  margin: 150px;
+  margin: 40%;
   transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
