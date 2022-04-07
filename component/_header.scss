@@ -6,22 +6,26 @@
 .tituloIndex{
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
+    margin: 2%;
     }
 
 
 header{
 
     @extend %disposicion;
+    border-block-end-style: double;
+    border-color: $navPalabra;
+    background-color:beige;
 
     .headerImg{
         width: 25px;
         height: 25px;
-        padding: 5px;
+        padding: 25px 5px 5px 5px ;
 
         .david{
-            background-color: $bcDavid;
-            width: 3.75rem;
-            height: 3.75rem;
+            background-color:$bcHover;
+            width: 70px;
+            height: 70px;
             border-radius: 10px;
             margin-left: 300%;
             
@@ -41,24 +45,27 @@ header{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            border-style: double solid solid solid;
+            // border-style: double solid solid solid;
             border-width: nth($size , 1 );
             padding: nth($size , 2 );
             border-color: $colorNav ;
             border-radius:nth($size , 3 ) ;
-            margin: 5px;
+            margin: 10px;
 
             .enlaceNav{
                 text-decoration: none;
+                font-family:'Times New Roman', Times, serif;
+                margin: 2%;
                li{
                   list-style: none;           
                   padding: 10px;
                   color: $navPalabra;  
+                //   margin: 2%;
 
                       &:hover {
                       
                     background-color:$bcHover ;
-                    transition: all 0.5s;
+                    transition: all 0.2s;
                     border-radius: 8px;
                     transform: scale(1.2);
                     -moz-transition: all 0.5s;
@@ -80,7 +87,8 @@ header{
     }
 
     .navbarLogos{
-        margin-right: 5%
+        margin-right: 5%;
+        padding-top: 25px;
     }
 
 
