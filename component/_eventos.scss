@@ -12,11 +12,14 @@
 
 
 .listaExpo{
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   display: flex;
+   justify-content: center;
+   margin: 2%;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
     
     .Eventos{
+        
         border-color: map-get($eventos , bordeColor );
         border-style:map-get($eventos , estiloBorde );
         border-width: map-get($eventos , anchoBorde );

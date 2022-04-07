@@ -104,15 +104,19 @@ header .navbarLogos .logos {
   }
 }
 .tituloFooter {
-  margin: 0%;
-  padding: 30px 0px 30px 15px;
+  padding: 30px 0px 30px 60px;
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
   background-color: #e7d1b4;
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 footer {
   background-color: #e7d1b4;
+}
+footer .col {
+  padding-left: 5%;
 }
 footer .listaRedes {
   display: flex;
@@ -125,16 +129,15 @@ footer .listaRedes li {
 
 main .tituloNoticias {
   color: #908d88;
-  padding: 10px;
   font-family: "Times New Roman", Times, serif;
+  margin: 5%;
 }
 main .noticias {
-  display: flex;
-  justify-content: center;
   margin: 5%;
 }
 main .noticias .col {
   padding-left: 10px;
+  margin: 1%;
 }
 main .noticias .col .anchoTarjeta {
   width: 18rem;
@@ -153,6 +156,20 @@ main .noticias .col .cardImg {
   height: 250px;
 }
 
+@media (max-width: 717px) {
+  .noticias {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .noticias .col {
+    display: flex;
+    justify-content: center;
+  }
+  .noticias .col .cardImg {
+    width: 250px;
+    height: 200px;
+  }
+}
 .tituloEventos {
   padding: 20px;
   margin: 0%;
@@ -161,13 +178,14 @@ main .noticias .col .cardImg {
 }
 
 .listaExpo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
 }
 .listaExpo .Eventos {
   border-color: #e0ddd8;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   width: 450px;
   padding: 10px;
   margin: 10px;
@@ -228,8 +246,7 @@ main .noticias .col .cardImg {
   }
 }
 .tituloContactos {
-  padding: 25px 0px 25px 0px;
-  margin: 0%;
+  margin: 2%;
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
@@ -239,25 +256,31 @@ main .noticias .col .cardImg {
   grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
-.barraContactos .tituloLista {
+.barraContactos .listaunoContactos {
+  display: grid;
+  justify-content: center;
+}
+.barraContactos .listaunoContactos .tituloLista {
   color: rgba(116, 112, 112, 0.904);
   font-family: "Times New Roman", Times, serif;
+  margin-top: 5%;
 }
-.barraContactos .listaInfo {
+.barraContactos .listaunoContactos .listaInfo {
   color: rgba(116, 112, 112, 0.904);
   padding: 30px 0px 30px 0px;
   font-family: "Times New Roman", Times, serif;
 }
-.barraContactos .contactosDos {
+.barraContactos .listaunoContactos .contactosDos {
   padding: 30px;
 }
-.barraContactos .listaMensaje {
+.barraContactos .listaunoContactos .listaMensaje {
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
+  width: 50%;
 }
-.barraContactos .botonContacto {
+.barraContactos .listaunoContactos .botonContacto {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;

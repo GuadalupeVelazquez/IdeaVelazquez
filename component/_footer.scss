@@ -2,15 +2,21 @@
 @import "../base/variables";
 
 .tituloFooter{
-    margin: 0%;
+    
     padding: map-get($footer , tituloPd );
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
     background-color: $colorNav;
+    border-top-width: 1px;
+    border-top-style: solid;
 }
 
 footer{
     background-color: $colorNav;
+    
+    .col{
+        padding-left: 5%;
+    }
     
     .listaRedes{
         display: flex;

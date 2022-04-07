@@ -4,13 +4,14 @@ main{
     
     .tituloNoticias{
         color: $titulos;
-        padding: 10px;
+        // padding: 10px;
         font-family:'Times New Roman', Times, serif;
+        margin:5%
     }
 
     .noticias{
-        display: flex;
-        justify-content: center;
+        // display: grid;
+        // justify-content: center;
         margin: 5%;
     
 
@@ -22,6 +23,10 @@ main{
 
     .col{
         padding-left: 10px;
+        // display: flex;
+        // justify-content: center;
+        margin: 1%;
+
         .anchoTarjeta{
             width: 18rem;
 
@@ -47,3 +52,20 @@ main{
 }
 }
 
+@media (max-width: 717px){
+
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+            .col{
+                display: flex;
+                justify-content: center;
+
+                .cardImg{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+    }
+}
