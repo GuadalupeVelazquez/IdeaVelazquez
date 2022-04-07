@@ -5,7 +5,7 @@ header {
 }
 
 .tituloIndex {
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -19,6 +19,7 @@ header .headerImg .david {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 10px;
+  margin-left: 300%;
 }
 header .navbarList {
   display: flex;
@@ -55,6 +56,9 @@ header .navbarList .navBar .enlaceNav li:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+header .navbarLogos {
+  margin-right: 5%;
 }
 header .navbarLogos {
   display: flex;
@@ -94,12 +98,17 @@ header .navbarLogos .logos {
 .tituloFooter {
   margin: 0%;
   padding: 30px 0px 30px 15px;
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
+  background-color: #e7d1b4;
 }
 
+footer {
+  background-color: #e7d1b4;
+}
 footer .listaRedes {
   display: flex;
+  justify-content: center;
 }
 footer .listaRedes li {
   margin: 10px;
@@ -107,26 +116,31 @@ footer .listaRedes li {
 }
 
 main .tituloNoticias {
-  color: #f5be77;
+  color: #908d88;
   padding: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-main .col {
+main .noticias {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+main .noticias .col {
   padding-left: 10px;
 }
-main .col .anchoTarjeta {
+main .noticias .col .anchoTarjeta {
   width: 18rem;
 }
-main .col .anchoTarjeta .botonNoticias {
+main .noticias .col .anchoTarjeta .botonNoticias {
   color: #212529;
   border-color: #212529;
 }
-main .col .anchoTarjeta .botonNoticias:hover {
+main .noticias .col .anchoTarjeta .botonNoticias:hover {
   color: #fff;
   background-color: #212529;
   border-color: #212529;
 }
-main .col .cardImg {
+main .noticias .col .cardImg {
   width: 285px;
   height: 250px;
 }
@@ -134,7 +148,7 @@ main .col .cardImg {
 .tituloEventos {
   padding: 20px;
   margin: 0%;
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -208,7 +222,7 @@ main .col .cardImg {
 .tituloContactos {
   padding: 25px 0px 25px 0px;
   margin: 0%;
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -262,7 +276,7 @@ main .col .cardImg {
   }
 }
 .tituloBoletos {
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -308,7 +322,7 @@ main .col .cardImg {
 }
 .parrafoObras {
   padding: 30px;
-  color: #f5be77;
+  color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
 

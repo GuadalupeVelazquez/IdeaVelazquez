@@ -6,12 +6,15 @@
     padding: map-get($footer , tituloPd );
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
+    background-color: $colorNav;
 }
 
 footer{
+    background-color: $colorNav;
     
     .listaRedes{
         display: flex;
+        justify-content: center;
         
 
         li {

@@ -2,12 +2,23 @@
 
 main{
     
-
     .tituloNoticias{
         color: $titulos;
         padding: 10px;
         font-family:'Times New Roman', Times, serif;
     }
+
+    .noticias{
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+    
+
+    // .tituloNoticias{
+    //     color: $titulos;
+    //     padding: 10px;
+    //     font-family:'Times New Roman', Times, serif;
+    // }
 
     .col{
         padding-left: 10px;
@@ -33,6 +44,6 @@ main{
         }
  }
 
-
+}
 }
 
