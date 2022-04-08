@@ -4,7 +4,8 @@
 .tituloContactos{
       
     
-    margin: 2%;
+    margin-left: 35%;
+    margin-top: 1%;
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
 }
@@ -19,6 +20,9 @@
     .listaunoContactos{
         display: grid;
         justify-content: center;
+        border-right-width: 1px;
+        border-right-style: dotted;
+        
     
     .tituloLista{
         color: $titulosVarios;

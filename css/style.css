@@ -7,7 +7,8 @@ header {
 .tituloIndex {
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
-  margin: 2%;
+  margin-left: 35%;
+  margin-top: 2%;
 }
 
 header {
@@ -74,8 +75,9 @@ header .navbarLogos {
   justify-content: space-around;
 }
 header .navbarLogos .logos {
-  font-size: 20px;
-  padding: 5px;
+  font-size: 30px;
+  padding: 30px;
+  color: black;
 }
 
 .carrusel {
@@ -110,6 +112,7 @@ header .navbarLogos .logos {
   background-color: #e7d1b4;
   border-top-width: 1px;
   border-top-style: solid;
+  margin-bottom: 0px;
 }
 
 footer {
@@ -125,6 +128,10 @@ footer .listaRedes {
 footer .listaRedes li {
   margin: 10px;
   list-style: none;
+}
+footer .listaRedes .iconosFooter {
+  font-size: 30px;
+  color: black;
 }
 
 main .tituloNoticias {
@@ -246,7 +253,8 @@ main .noticias .col .cardImg {
   }
 }
 .tituloContactos {
-  margin: 2%;
+  margin-left: 35%;
+  margin-top: 1%;
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
 }
@@ -259,6 +267,8 @@ main .noticias .col .cardImg {
 .barraContactos .listaunoContactos {
   display: grid;
   justify-content: center;
+  border-right-width: 1px;
+  border-right-style: dotted;
 }
 .barraContactos .listaunoContactos .tituloLista {
   color: rgba(116, 112, 112, 0.904);

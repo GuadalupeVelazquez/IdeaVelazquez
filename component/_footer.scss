@@ -9,6 +9,7 @@
     background-color: $colorNav;
     border-top-width: 1px;
     border-top-style: solid;
+    margin-bottom: 0px;
 }
 
 footer{
@@ -28,6 +29,10 @@ footer{
              list-style:  map-get($footer , estiloLista );   
             }
 
+            .iconosFooter{
+                font-size: 30px;
+                color: black;
+            }
       }
         
     
