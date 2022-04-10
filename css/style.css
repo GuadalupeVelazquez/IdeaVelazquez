@@ -16,17 +16,26 @@ header {
   border-color: rgba(116, 112, 112, 0.904);
   background-color: beige;
 }
-header .headerImg {
+header .imagenHeader {
+  margin-left: 1.5%;
+}
+header .imagenHeader .headerImg {
   width: 25px;
   height: 25px;
   padding: 25px 5px 5px 5px;
 }
-header .headerImg .david {
+header .imagenHeader .headerImg .david {
   background-color: rgba(238, 221, 202, 0.863);
   width: 70px;
   height: 70px;
   border-radius: 10px;
-  margin-left: 300%;
+  margin-left: 50%;
+}
+header .tituloImagen {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #450949;
+  margin-top: 60%;
+  font-size: 70%;
 }
 header .navbarList {
   display: flex;
@@ -319,11 +328,25 @@ main .noticias .col .cardImg {
 .tituloBoletos {
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
+  margin: 2% 0% 2% 35%;
 }
 
 .tituloHorario {
   color: rgba(116, 112, 112, 0.904);
   font-family: "Times New Roman", Times, serif;
+}
+
+.infoBoletos .parrafoBoletos {
+  display: flex;
+}
+.infoBoletos .parrafoBoletos .textoBoletos {
+  margin-left: 2%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.infoBoletos .tituloRecomendacion {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1%;
+  color: rgba(116, 112, 112, 0.904);
 }
 
 .listaBoletos {
@@ -334,9 +357,10 @@ main .noticias .col .cardImg {
 .listaBoletos .listahorarioPrecio {
   border-color: #e0ddd8;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   padding: 10px;
   margin: 10px;
+  background-color: rgba(238, 224, 234, 0.526);
 }
 .listaBoletos .listahorarioPrecio .tituloPrecio {
   color: rgba(116, 112, 112, 0.904);
@@ -408,7 +432,7 @@ main .noticias .col .cardImg {
   text-align: center;
 }
 .obras .containerObras figure .txt p {
-  margin: 40%;
+  margin: 20%;
   transition: all 500ms ease-out;
   -moz-transition: all 500ms ease-out;
   -o-transition: all 500ms ease-out;
