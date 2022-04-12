@@ -5,7 +5,7 @@ header {
 }
 
 .tituloIndex {
-  color: #908d88;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
   margin-left: 35%;
   margin-top: 2%;
@@ -13,8 +13,9 @@ header {
 
 header {
   border-block-end-style: double;
-  border-color: rgba(116, 112, 112, 0.904);
-  background-color: beige;
+  border-color: #B4FE98;
+  background-color: #95D1CC;
+  border-bottom-width: 4px;
 }
 header .imagenHeader {
   margin-left: 1.5%;
@@ -23,7 +24,7 @@ header .imagenHeader .headerImg {
   padding: 25px 5px 5px 5px;
 }
 header .imagenHeader .headerImg .david {
-  background-color: rgba(238, 221, 202, 0.863);
+  background-color: #FFFCDC;
   width: 70px;
   height: 70px;
   border-radius: 10px;
@@ -31,8 +32,10 @@ header .imagenHeader .headerImg .david {
 }
 header .tituloImagen {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #450949;
+  color: #072227;
   font-size: 70%;
+  background-color: #E9F6E5;
+  border-radius: 10px;
 }
 header .navbarList {
   display: flex;
@@ -57,10 +60,10 @@ header .navbarList .navBar .enlaceNav {
 header .navbarList .navBar .enlaceNav li {
   list-style: none;
   padding: 10px;
-  color: rgba(116, 112, 112, 0.904);
+  color: #072227;
 }
 header .navbarList .navBar .enlaceNav li:hover {
-  background-color: rgba(238, 221, 202, 0.863);
+  background-color: #FFFCDC;
   transition: all 0.2s;
   border-radius: 8px;
   transform: scale(1.2);
@@ -137,19 +140,29 @@ header .navbarLogos .logos {
     font-size: 18px;
     padding: 5px;
   }
+
+  .navMenu .navBar {
+    list-style: none;
+  }
+  .navMenu .navBar .enlaceNav {
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
 }
 .tituloFooter {
   padding: 30px 0px 30px 60px;
-  color: #908d88;
   font-family: "Times New Roman", Times, serif;
-  background-color: #e7d1b4;
-  border-top-width: 1px;
+  background-color: #94B3FD;
+  border-top-width: 4px;
   border-top-style: solid;
   margin-bottom: 0px;
+  border-color: #B4FE98;
 }
 
 footer {
-  background-color: #e7d1b4;
+  background-color: #94B3FD;
+  padding: 2%;
 }
 footer .col {
   padding-left: 5%;
@@ -166,9 +179,19 @@ footer .listaRedes .iconosFooter {
   font-size: 30px;
   color: black;
 }
+@media (max-width: 500px) {
+  footer #footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer #footerContainer .mapa {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 main .tituloNoticias {
-  color: #908d88;
+  color: #99A799;
   font-family: "Times New Roman", Times, serif;
   margin: 5%;
 }
@@ -220,7 +243,7 @@ main .noticias .col .cardImg {
 .tituloEventos {
   padding: 20px;
   margin: 0%;
-  color: #908d88;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -230,7 +253,7 @@ main .noticias .col .cardImg {
   margin: 2%;
 }
 .listaExpo .Eventos {
-  border-color: #e0ddd8;
+  border-color: #95D1CC;
   border-style: solid;
   border-width: 3px;
   width: 450px;
@@ -238,7 +261,7 @@ main .noticias .col .cardImg {
   margin: 10px;
 }
 .listaExpo .Eventos .tituloEvent {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   font-family: "Times New Roman", Times, serif;
 }
 .listaExpo .Eventos .info {
@@ -295,7 +318,7 @@ main .noticias .col .cardImg {
 .tituloContactos {
   margin: 2%;
   margin-top: 1%;
-  color: #908d88;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -307,16 +330,14 @@ main .noticias .col .cardImg {
 .barraContactos .listaunoContactos {
   display: grid;
   justify-content: center;
-  border-right-width: 1px;
-  border-right-style: dotted;
 }
 .barraContactos .listaunoContactos .tituloLista {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   font-family: "Times New Roman", Times, serif;
   margin-top: 5%;
 }
 .barraContactos .listaunoContactos .listaInfo {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   padding: 30px 0px 30px 0px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -357,13 +378,14 @@ main .noticias .col .cardImg {
   }
 }
 .tituloBoletos {
-  color: #908d88;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
-  margin: 2% 0% 2% 35%;
+  text-align: center;
+  margin: 15px;
 }
 
 .tituloHorario {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -373,19 +395,20 @@ main .noticias .col .cardImg {
 .infoBoletos .parrafoBoletos .textoBoletos {
   margin-left: 2%;
   font-family: serif;
+  padding: 5px;
 }
 .infoBoletos .parrafoBoletos .textoEnlace a {
   margin: 20px;
   font-family: serif;
   text-decoration: none;
-  color: #58209d;
+  color: #39A388;
   font-size: larger;
 }
 .infoBoletos .tituloRecomendacion {
   font-family: "Times New Roman", Times, serif;
   margin: 3%;
-  color: rgba(116, 112, 112, 0.904);
-  margin-left: 40%;
+  color: #181D31;
+  text-align: center;
 }
 
 .listaBoletos {
@@ -394,19 +417,18 @@ main .noticias .col .cardImg {
   padding: 30px;
 }
 .listaBoletos .listahorarioPrecio {
-  border-color: #e0ddd8;
+  border-color: #95D1CC;
   border-style: solid;
   border-width: 3px;
   padding: 10px;
   margin: 10px;
-  background-color: rgba(238, 224, 234, 0.526);
 }
 .listaBoletos .listahorarioPrecio .tituloPrecio {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   font-family: "Times New Roman", Times, serif;
 }
 .listaBoletos .listahorarioPrecio .tituloPrecio .tituloHorario {
-  color: rgba(116, 112, 112, 0.904);
+  color: #181D31;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -426,7 +448,7 @@ main .noticias .col .cardImg {
 }
 .parrafoObras {
   padding: 30px;
-  color: #908d88;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
 }
 

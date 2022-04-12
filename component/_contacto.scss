@@ -19,8 +19,8 @@
     .listaunoContactos{
         display: grid;
         justify-content: center;
-        border-right-width: 1px;
-        border-right-style: dotted;
+        // border-right-width: 1px;
+        // border-right-style: dotted;
         
     
     .tituloLista{
@@ -62,10 +62,14 @@
     .barraContactos{
         display: grid;
         grid-template-columns: 1fr;
+        
+        
 
-        .listadosContactos{
-            padding: 10px;
-        }
+            .listadosContactos{
+                padding: 10px;
+            }
+        
+
 
     }
         
@@ -77,10 +81,16 @@
 
     .barraContactos{
         display: grid;
-        .comentario{
-            width: 250px;
-            
-        }
+
+        
+
+            .comentario{
+                width: 250px;
+                
+            }
+
+        
+
     }
 
 

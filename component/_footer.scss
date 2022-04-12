@@ -4,16 +4,18 @@
 .tituloFooter{
     
     padding: map-get($footer , tituloPd );
-    color: $titulos;
+    // color: #99A799;
     font-family:'Times New Roman', Times, serif;
-    background-color: $colorNav;
-    border-top-width: 1px;
+    background-color: #94B3FD;
+    border-top-width: 4px;
     border-top-style: solid;
     margin-bottom: 0px;
+    border-color: #B4FE98;
 }
 
 footer{
-    background-color: $colorNav;
+    background-color: #94B3FD;
+    padding: 2%;
     
     .col{
         padding-left: 5%;
@@ -35,5 +37,16 @@ footer{
             }
       }
         
+      @media (max-width: 500px){
+          #footerContainer{
+              display: flex;
+              flex-direction: column;
+
+              .mapa{
+                  display: flex;
+                  justify-content: center;
+              }
+          }
+      }
     
 }

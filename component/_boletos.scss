@@ -4,7 +4,8 @@
 .tituloBoletos{
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
-    margin: 2% 0% 2% 35%;
+    text-align: center;
+    margin: 15px;
 }
 
 
@@ -20,13 +21,15 @@
         .textoBoletos{
             margin-left: 2%;
             font-family:serif;
+            padding: 5px;
+            
         }
         .textoEnlace{
             a{
                 margin: 20px;
                 font-family:serif;
                 text-decoration: none;
-                color: rgb(88, 32, 157);
+                color: #39A388;
                 font-size:larger;
             }
         }
@@ -36,7 +39,7 @@
         font-family:'Times New Roman', Times, serif;
         margin:3%;
         color:$titulosVarios;
-        margin-left: 40%;
+        text-align: center;
     }
 }
 
@@ -46,12 +49,12 @@
     padding: 30px;
 
     .listahorarioPrecio {
-        border-color: rgb(224, 221, 216);
+        border-color: #95D1CC;
         border-style: solid;
         border-width: 3px;
         padding: 10px;
         margin: 10px;
-        background-color:rgba(238, 224, 234, 0.526);
+        // background-color:rgba(238, 224, 234, 0.526);
 
         .tituloPrecio{
             color: $titulosVarios;
@@ -77,6 +80,9 @@
 }
 
 @media (max-width: 500px){
+
+    
+
     .listaBoletos{
         display: grid;
         grid-template-columns: 1fr;
