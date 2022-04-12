@@ -69,3 +69,13 @@ main{
             }
     }
 }
+
+@media (max-width: 500px){
+
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+}

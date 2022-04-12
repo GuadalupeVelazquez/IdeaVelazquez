@@ -20,8 +20,6 @@ header .imagenHeader {
   margin-left: 1.5%;
 }
 header .imagenHeader .headerImg {
-  width: 25px;
-  height: 25px;
   padding: 25px 5px 5px 5px;
 }
 header .imagenHeader .headerImg .david {
@@ -29,12 +27,11 @@ header .imagenHeader .headerImg .david {
   width: 70px;
   height: 70px;
   border-radius: 10px;
-  margin-left: 50%;
+  margin-left: 10%;
 }
 header .tituloImagen {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #450949;
-  margin-top: 60%;
   font-size: 70%;
 }
 header .navbarList {
@@ -78,6 +75,19 @@ header .navbarLogos {
   margin-right: 5%;
   padding-top: 25px;
 }
+header .navbarLogos .navLabel {
+  display: none;
+  font-size: 200%;
+  margin-left: 5px;
+}
+header .navbarLogos .navMenu, header .navbarLogos .navInput {
+  display: none;
+}
+header .navbarLogos .navInput:checked + .navMenu {
+  width: 100px;
+  height: 200px;
+  display: block;
+}
 header .navbarLogos {
   display: flex;
   flex-direction: row;
@@ -99,14 +109,28 @@ header .navbarLogos .logos {
   height: 80%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
+  .navLabel {
+    display: block !important;
+  }
+
+  .imagenHeader {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+  }
+  .imagenHeader .tituloImagen {
+    margin-left: 25%;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    flex-direction: row-reverse;
   }
   header .navbarList {
-    padding-left: 15%;
+    display: none;
   }
 
   .logos {
@@ -186,6 +210,13 @@ main .noticias .col .cardImg {
     height: 200px;
   }
 }
+@media (max-width: 500px) {
+  .noticias {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 .tituloEventos {
   padding: 20px;
   margin: 0%;
@@ -262,7 +293,7 @@ main .noticias .col .cardImg {
   }
 }
 .tituloContactos {
-  margin-left: 35%;
+  margin: 2%;
   margin-top: 1%;
   color: #908d88;
   font-family: "Times New Roman", Times, serif;
@@ -341,12 +372,20 @@ main .noticias .col .cardImg {
 }
 .infoBoletos .parrafoBoletos .textoBoletos {
   margin-left: 2%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: serif;
+}
+.infoBoletos .parrafoBoletos .textoEnlace a {
+  margin: 20px;
+  font-family: serif;
+  text-decoration: none;
+  color: #58209d;
+  font-size: larger;
 }
 .infoBoletos .tituloRecomendacion {
   font-family: "Times New Roman", Times, serif;
-  margin: 1%;
+  margin: 3%;
   color: rgba(116, 112, 112, 0.904);
+  margin-left: 40%;
 }
 
 .listaBoletos {
@@ -454,6 +493,10 @@ main .noticias .col .cardImg {
   figure {
     height: 300px;
     width: 280px;
+  }
+  figure .txt p {
+    margin: 10% !important;
+    font-size: 90%;
   }
 }
 header {

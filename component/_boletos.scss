@@ -19,14 +19,24 @@
         display: flex;
         .textoBoletos{
             margin-left: 2%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family:serif;
+        }
+        .textoEnlace{
+            a{
+                margin: 20px;
+                font-family:serif;
+                text-decoration: none;
+                color: rgb(88, 32, 157);
+                font-size:larger;
+            }
         }
     }
 
     .tituloRecomendacion{
         font-family:'Times New Roman', Times, serif;
-        margin:1%;
+        margin:3%;
         color:$titulosVarios;
+        margin-left: 40%;
     }
 }
 

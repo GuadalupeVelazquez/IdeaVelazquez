@@ -3,8 +3,7 @@
 
 .tituloContactos{
       
-    
-    margin-left: 35%;
+    margin:2%;
     margin-top: 1%;
     color: $titulos;
     font-family:'Times New Roman', Times, serif;
@@ -73,6 +72,9 @@
 }
 
 @media (max-width: 500px){
+
+   
+
     .barraContactos{
         display: grid;
         .comentario{

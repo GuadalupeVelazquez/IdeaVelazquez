@@ -17,7 +17,7 @@ header{
     border-block-end-style: double;
     border-color: $navPalabra;
     background-color:beige;
-
+    
     .imagenHeader{
         margin-left: 1.5%;
 
@@ -25,8 +25,8 @@ header{
     // align-items: flex-start;
 
         .headerImg{
-            width: 25px;
-            height: 25px;
+            // width: 25px;
+            // height: 25px;
             padding: 25px 5px 5px 5px ;
 
             .david{
@@ -34,7 +34,7 @@ header{
                 width: 70px;
                 height: 70px;
                 border-radius: 10px;
-                margin-left: 50%;
+                margin-left: 10%;
                 
                 
             }
@@ -44,7 +44,7 @@ header{
         
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: rgb(69, 9, 73);
-        margin-top: 60%;
+        // margin-top: 60%;
         font-size: 70%;
     }
 
@@ -104,6 +104,20 @@ header{
     .navbarLogos{
         margin-right: 5%;
         padding-top: 25px;
+        .navLabel{
+            display: none;
+            font-size: 200%;
+            margin-left: 5px;
+        }
+        .navMenu, .navInput{
+            display: none;
+        }
+        .navInput:checked + .navMenu{
+            width: 100px;
+            height: 200px;
+            display: block;
+        }
+
     }
 
 
@@ -133,17 +147,32 @@ header{
     }
 }
 
-@media (max-width: 900px){
-    header{
+@media (max-width: 500px){
+    .navLabel{
+        display: block !important;
+    }
+    .imagenHeader{
+        display: flex;
+        flex-direction:column ;
+        margin-right: 15%;
 
+        .tituloImagen{
+            margin-left: 25%;
+        }
+    }
+
+    header{
+        
         
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
+        flex-direction: row-reverse;
         
 
         .navbarList{
-            padding-left: 15%;
+            display: none;
+
         }    
     }
 
@@ -152,4 +181,5 @@ header{
         padding: 5px;
     }
 }
+
 
