@@ -4,16 +4,9 @@ header {
   flex-wrap: nowrap;
 }
 
-.tituloIndex {
-  color: #072227;
-  font-family: "Times New Roman", Times, serif;
-  margin-left: 35%;
-  margin-top: 2%;
-}
-
 header {
-  border-block-end-style: double;
-  border-color: #B4FE98;
+  border-block-end-style: groove;
+  border-color: #C69B7B;
   background-color: #95D1CC;
   border-bottom-width: 4px;
 }
@@ -21,21 +14,14 @@ header .imagenHeader {
   margin-left: 1.5%;
 }
 header .imagenHeader .headerImg {
-  padding: 25px 5px 5px 5px;
+  padding: 5px;
 }
-header .imagenHeader .headerImg .david {
+header .imagenHeader .headerImg .logoNav {
   background-color: #FFFCDC;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   border-radius: 10px;
   margin-left: 10%;
-}
-header .tituloImagen {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #072227;
-  font-size: 70%;
-  background-color: #E9F6E5;
-  border-radius: 10px;
 }
 header .navbarList {
   display: flex;
@@ -74,32 +60,22 @@ header .navbarList .navBar .enlaceNav li:hover {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
-header .navbarLogos {
+header .navbarMenu {
   margin-right: 5%;
   padding-top: 25px;
 }
-header .navbarLogos .navLabel {
+header .navbarMenu .navLabel {
   display: none;
   font-size: 200%;
   margin-left: 5px;
 }
-header .navbarLogos .navMenu, header .navbarLogos .navInput {
+header .navbarMenu .navMenu, header .navbarMenu .navInput {
   display: none;
 }
-header .navbarLogos .navInput:checked + .navMenu {
+header .navbarMenu .navInput:checked + .navMenu {
   width: 100px;
   height: 200px;
   display: block;
-}
-header .navbarLogos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-header .navbarLogos .logos {
-  font-size: 30px;
-  padding: 30px;
-  color: black;
 }
 
 .carrusel {
@@ -122,9 +98,6 @@ header .navbarLogos .logos {
     flex-direction: column;
     margin-right: 15%;
   }
-  .imagenHeader .tituloImagen {
-    margin-left: 25%;
-  }
 
   header {
     display: flex;
@@ -136,16 +109,11 @@ header .navbarLogos .logos {
     display: none;
   }
 
-  .logos {
-    font-size: 18px;
-    padding: 5px;
-  }
-
   .navMenu .navBar {
     list-style: none;
   }
   .navMenu .navBar .enlaceNav {
-    color: black;
+    color: #072227;
     text-decoration: none;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
@@ -153,15 +121,15 @@ header .navbarLogos .logos {
 .tituloFooter {
   padding: 30px 0px 30px 60px;
   font-family: "Times New Roman", Times, serif;
-  background-color: #94B3FD;
-  border-top-width: 4px;
-  border-top-style: solid;
+  background-color: #D7E9F7;
+  border-top-width: 3px;
+  border-top-style: dotted;
   margin-bottom: 0px;
-  border-color: #B4FE98;
+  border-color: #3A3845;
 }
 
 footer {
-  background-color: #94B3FD;
+  background-color: #D7E9F7;
   padding: 2%;
 }
 footer .col {
@@ -191,7 +159,7 @@ footer .listaRedes .iconosFooter {
 }
 
 main .tituloNoticias {
-  color: #99A799;
+  color: #072227;
   font-family: "Times New Roman", Times, serif;
   margin: 5%;
 }

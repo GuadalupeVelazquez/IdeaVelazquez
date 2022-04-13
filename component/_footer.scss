@@ -4,17 +4,16 @@
 .tituloFooter{
     
     padding: map-get($footer , tituloPd );
-    // color: #99A799;
     font-family:'Times New Roman', Times, serif;
-    background-color: #94B3FD;
-    border-top-width: 4px;
-    border-top-style: solid;
+    background-color: #D7E9F7;
+    border-top-width: 3px;
+    border-top-style:dotted;
     margin-bottom: 0px;
-    border-color: #B4FE98;
+    border-color: #3A3845;
 }
 
 footer{
-    background-color: #94B3FD;
+    background-color: #D7E9F7;
     padding: 2%;
     
     .col{
