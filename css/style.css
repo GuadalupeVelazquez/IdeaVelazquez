@@ -119,13 +119,14 @@ header .navbarMenu .navInput:checked + .navMenu {
   }
 }
 .tituloFooter {
-  padding: 30px 0px 30px 60px;
+  padding: 30px 0px 30px 0px;
   font-family: "Times New Roman", Times, serif;
   background-color: #D7E9F7;
   border-top-width: 3px;
   border-top-style: dotted;
   margin-bottom: 0px;
   border-color: #3A3845;
+  text-align: center;
 }
 
 footer {
@@ -148,6 +149,9 @@ footer .listaRedes .iconosFooter {
   color: black;
 }
 @media (max-width: 500px) {
+  footer .tituloFooter {
+    text-align: none;
+  }
   footer #footerContainer {
     display: flex;
     flex-direction: column;
@@ -162,11 +166,14 @@ main .tituloNoticias {
   color: #072227;
   font-family: "Times New Roman", Times, serif;
   margin: 5%;
+  text-align: center;
 }
 main .noticias {
   margin: 5%;
 }
 main .noticias .col {
+  display: flex;
+  justify-content: center;
   padding-left: 10px;
   margin: 1%;
 }
@@ -213,6 +220,7 @@ main .noticias .col .cardImg {
   margin: 0%;
   color: #072227;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .listaExpo {
@@ -288,6 +296,7 @@ main .noticias .col .cardImg {
   margin-top: 1%;
   color: #072227;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .barraContactos {
@@ -418,6 +427,7 @@ main .noticias .col .cardImg {
   padding: 30px;
   color: #072227;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .obras {

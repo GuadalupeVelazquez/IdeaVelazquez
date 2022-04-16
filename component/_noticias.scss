@@ -5,7 +5,9 @@ main{
     .tituloNoticias{
         color: #072227;
         font-family:'Times New Roman', Times, serif;
-        margin:5%
+        margin:5%;
+        text-align: center;
+        
     }
 
     .noticias{
@@ -13,6 +15,8 @@ main{
     
 
     .col{
+        display: flex;
+        justify-content: center;
         padding-left: 10px;
         margin: 1%;
 

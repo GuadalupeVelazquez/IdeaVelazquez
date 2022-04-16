@@ -10,6 +10,7 @@
     border-top-style:dotted;
     margin-bottom: 0px;
     border-color: #3A3845;
+    text-align: center;
 }
 
 footer{
@@ -37,6 +38,11 @@ footer{
       }
         
       @media (max-width: 500px){
+
+        .tituloFooter{
+            text-align: none;
+        }
+
           #footerContainer{
               display: flex;
               flex-direction: column;
