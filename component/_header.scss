@@ -40,7 +40,7 @@ header{
 
 
     .navbarList{
-        display: flex;
+        // display: flex;
         justify-content: space-evenly;
 
         .navBar{
@@ -99,11 +99,7 @@ header{
         .navMenu, .navInput{
             display: none;
         }
-        .navInput:checked + .navMenu{
-            width: 100px;
-            height: 200px;
-            display: block;
-        }
+
 
     }
 
@@ -120,10 +116,13 @@ header{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 900px){
     .navLabel{
-        display: block !important;
+        display: block!important;
     }
+    .navbarList{
+        display: none;
+    } 
     .imagenHeader{
         display: flex;
         flex-direction:column ;
@@ -141,13 +140,13 @@ header{
         flex-direction: row-reverse;
         
 
-        .navbarList{
-            display: none;
-
-        }    
     }
 
-    
+    .navInput:checked + .navMenu{
+        width: 100px;
+        height: 200px;
+        display: block;
+    }
 
 
     .navMenu{

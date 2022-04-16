@@ -16,12 +16,11 @@
 }
 
 .infoBoletos{
-    .parrafoBoletos{
-        display: flex;
+    
         .textoBoletos{
-            margin-left: 2%;
+            margin-left: 5px;
             font-family:serif;
-            padding: 5px;
+            
             
         }
         .textoEnlace{
@@ -33,7 +32,7 @@
                 font-size:larger;
             }
         }
-    }
+    
 
     .tituloRecomendacion{
         font-family:'Times New Roman', Times, serif;

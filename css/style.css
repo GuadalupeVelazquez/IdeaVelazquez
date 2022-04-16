@@ -24,7 +24,6 @@ header .imagenHeader .headerImg .logoNav {
   margin-left: 10%;
 }
 header .navbarList {
-  display: flex;
   justify-content: space-evenly;
 }
 header .navbarList .navBar {
@@ -72,11 +71,6 @@ header .navbarMenu .navLabel {
 header .navbarMenu .navMenu, header .navbarMenu .navInput {
   display: none;
 }
-header .navbarMenu .navInput:checked + .navMenu {
-  width: 100px;
-  height: 200px;
-  display: block;
-}
 
 .carrusel {
   display: flex;
@@ -88,9 +82,13 @@ header .navbarMenu .navInput:checked + .navMenu {
   height: 80%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .navLabel {
     display: block !important;
+  }
+
+  .navbarList {
+    display: none;
   }
 
   .imagenHeader {
@@ -105,8 +103,11 @@ header .navbarMenu .navInput:checked + .navMenu {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
   }
-  header .navbarList {
-    display: none;
+
+  .navInput:checked + .navMenu {
+    width: 100px;
+    height: 200px;
+    display: block;
   }
 
   .navMenu .navBar {
@@ -163,7 +164,7 @@ footer .listaRedes .iconosFooter {
 }
 
 main .tituloNoticias {
-  color: #072227;
+  color: #525E75;
   font-family: "Times New Roman", Times, serif;
   margin: 5%;
   text-align: center;
@@ -218,7 +219,7 @@ main .noticias .col .cardImg {
 .tituloEventos {
   padding: 20px;
   margin: 0%;
-  color: #072227;
+  color: #525E75;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
@@ -294,7 +295,7 @@ main .noticias .col .cardImg {
 .tituloContactos {
   margin: 2%;
   margin-top: 1%;
-  color: #072227;
+  color: #525E75;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
@@ -355,7 +356,7 @@ main .noticias .col .cardImg {
   }
 }
 .tituloBoletos {
-  color: #072227;
+  color: #525E75;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   margin: 15px;
@@ -366,15 +367,11 @@ main .noticias .col .cardImg {
   font-family: "Times New Roman", Times, serif;
 }
 
-.infoBoletos .parrafoBoletos {
-  display: flex;
-}
-.infoBoletos .parrafoBoletos .textoBoletos {
-  margin-left: 2%;
+.infoBoletos .textoBoletos {
+  margin-left: 5px;
   font-family: serif;
-  padding: 5px;
 }
-.infoBoletos .parrafoBoletos .textoEnlace a {
+.infoBoletos .textoEnlace a {
   margin: 20px;
   font-family: serif;
   text-decoration: none;
@@ -425,7 +422,7 @@ main .noticias .col .cardImg {
 }
 .parrafoObras {
   padding: 30px;
-  color: #072227;
+  color: #525E75;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
