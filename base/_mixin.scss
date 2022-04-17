@@ -1,8 +1,8 @@
-@mixin logosNav ($posicion, $direccion, $contenido){
-    display: $posicion;
-    flex-direction: $direccion;
-    justify-content: $contenido;
-}
+// @mixin logosNav ($posicion, $direccion, $contenido){
+//     display: $posicion;
+//     flex-direction: $direccion;
+//     justify-content: $contenido;
+// }
     @mixin boletosLista ($posicion, $columna) {
         display: $posicion;
         grid-template-columns: $columna;

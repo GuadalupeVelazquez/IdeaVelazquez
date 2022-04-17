@@ -1,7 +1,7 @@
 @import "../base/variables";
 @import "../base/listas";
 @import "../base/extends";
-@import "../base/mixin";
+
 
 
 
@@ -40,7 +40,7 @@ header{
 
 
     .navbarList{
-        // display: flex;
+        
         justify-content: space-evenly;
 
         .navBar{
@@ -61,12 +61,14 @@ header{
                li{
                   list-style: none;           
                   padding: 10px;
-                  color: #072227;  
+                //   color: #072227;  
+                color: white;
                 
 
                       &:hover {
                       
-                    background-color:#FFFCDC ;
+                    // background-color:#FFFCDC ;
+                    background-color: #94B3FD;
                     transition: all 0.2s;
                     border-radius: 8px;
                     transform: scale(1.2);
@@ -119,6 +121,14 @@ header{
 @media (max-width: 900px){
     .navLabel{
         display: block!important;
+        
+        .logoMenu{
+            background-color: #C8E3D4;
+            border-radius: 5px;
+            color: white;
+            margin-left: 5px;
+        }
+        
     }
     .navbarList{
         display: none;
@@ -150,12 +160,19 @@ header{
 
 
     .navMenu{
+        
         .navBar{
             list-style: none;
+            background-color: #94B3FD;
+            border-radius: 10px;
+            margin-left: 5px;
+            width: 150px;
+            padding-left: 30px;
             .enlaceNav{
-                color: #072227;
+                color: white;
                 text-decoration: none;
                 font-family: Georgia, 'Times New Roman', Times, serif;
+                
             }
         }
     }
